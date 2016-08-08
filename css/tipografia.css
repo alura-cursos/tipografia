@@ -1,0 +1,83 @@
+.marca{
+	color: #F00;
+	text-decoration: none;
+	font-size: 28px;
+	line-height: 20px;
+}
+
+nav ul li a{
+	color: #FFF;
+	text-decoration: none;
+	line-height: 20px;
+}
+nav ul li a:hover{
+	background-color: #F00;
+	text-decoration: none;
+}
+
+h1{
+	font-size: 3em;
+}
+h2{
+	font-size: 2.5em;
+}
+h3{
+	font-size: 2em;
+}
+h5{
+	font-size: 1.8em;
+}
+p{
+	font-size: 1.2em;
+}
+figcaption{
+	font-size: 0.8em;
+	font-style: italic;
+	line-height: 1em;
+}
+
+#introducao {
+	color: #FFF;
+	text-align: center;
+}
+
+/* Aula 1 - Conhecendo os diferentes tipos de fonte */
+
+#tipos {
+	text-align: left;
+}
+
+.aula-1-serifa {
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+.aula-1-sem-serifa {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.aula-1-espacamento-fixo {
+	font-family: "Courier New", Courier, monospace;
+}
+.aula-1-cursiva {
+	font-family: "Courier New", Courier, monospace;
+}
+
+/* Aula 2 - Extensões, uso legal e instalação de fontes */
+
+#extensoes {
+}
+
+/* Aula 3 - Estilos aplicáveis com CSS3 */
+
+#estilos {
+}
+
+/* Aula 4 - Composições: alinhamento e combinações de fontes */
+
+#composicoes {
+}
+
+/* Aula 1 - Questões importantes: erros comuns e as fontes nos meios digitais */
+
+#questoes-importantes {
+}
