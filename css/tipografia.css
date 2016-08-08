@@ -1,3 +1,7 @@
+body{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
 .marca{
 	color: #F00;
 	text-decoration: none;
@@ -36,15 +40,38 @@ figcaption{
 	line-height: 1em;
 }
 
+/* Introdução */
+
 #introducao {
 	color: #FFF;
 	text-align: center;
 }
 
+.intro-titulo{
+	font: 900 3em Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	margin-top: 10%;
+}
+
+.intro-subtitulo{
+	font: italic 1.9em Georgia, "Times New Roman", Serif;
+}
+
+@media (min-width: 768px){
+	.intro-titulo{
+		font-size: 5em;
+		text-transform: uppercase;
+	}
+
+	.intro-subtitulo{
+		font-size: 2.5em;
+	}
+}
+
 /* Aula 1 - Conhecendo os diferentes tipos de fonte */
 
 #tipos {
-	text-align: left;
+	text-align: center;
 }
 
 .aula-1-serifa {
@@ -59,7 +86,10 @@ figcaption{
 	font-family: "Courier New", Courier, monospace;
 }
 .aula-1-cursiva {
-	font-family: "Courier New", Courier, monospace;
+	font-family: "Brush Script MT", cursive;
+}
+.aula-1-fantasia {
+	font-family: "Papyrus", cursive;
 }
 
 /* Aula 2 - Extensões, uso legal e instalação de fontes */

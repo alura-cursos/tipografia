@@ -33,9 +33,9 @@ html {
 
 .box-meio{
 	width: 100%;
-	float: left;
 	padding: 30px;
-	margin: 0 auto;
+	display: block;
+	vertical-align: top;
 }
 
 nav {
@@ -73,31 +73,31 @@ figure {
 #tipos {
 	overflow: auto;
     padding: 100px 0;
-    background: #EEE;
+    background: #FAFAFA;
 }
 
 #extensoes {
     height: 100%;
-    padding-top: 150px;
+    padding: 100px 0;
     background: #FFF;
 }
 
 #estilos {
     height: 100%;
-    padding-top: 150px;
-    background: #EEE;
+    padding: 100px 0;
+    background: #FAFAFA;
 }
 
 #composicoes {
     height: 100%;
-    padding-top: 150px;
+    padding: 100px 0;
     background: #FFF;
 }
 
 #questoes-importantes {
     height: 100%;
-    padding-top: 150px;
-    background: #EEE;
+    padding: 100px 0;
+    background: #FAFAFA;
 }
 
 @media (min-width: 768px){
@@ -106,8 +106,8 @@ figure {
 	}
 
 	.box-meio{
-		width: 50%;
-		display: inline;
+		width: 49.5%;
+		display: inline-block;
 	}
 
 	nav ul{
