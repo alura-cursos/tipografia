@@ -58,9 +58,24 @@ figure {
 	margin: 1em 0;
 }
 
+.botao {
+	text-align: center;
+	background-color: #090;
+	border: none;
+	border-radius: 5px;
+	padding: .8em 1em;
+	color: #FFF;
+	display: inline-block;
+}
+.botao:hover {
+	background-color: #0C0;
+	color: #FFF;
+	text-decoration: none;
+}
+
 #introducao {
-    height: 100%;
-    padding-top: 150px;
+	height: 100%;
+	padding-top: 20%;
 	background-image: url(../img/fundo-header.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -72,31 +87,31 @@ figure {
 
 #tipos {
 	overflow: auto;
-    padding: 100px 0;
+    padding: 50px 0;
     background: #FAFAFA;
 }
 
 #extensoes {
-    height: 100%;
-    padding: 100px 0;
+	overflow: auto;
+    padding: 50px 0;
     background: #FFF;
 }
 
 #estilos {
-    height: 100%;
-    padding: 100px 0;
+	overflow: auto;
+    padding: 50px 0;
     background: #FAFAFA;
 }
 
 #composicoes {
-    height: 100%;
-    padding: 100px 0;
+	overflow: auto;
+    padding: 50px 0;
     background: #FFF;
 }
 
 #questoes-importantes {
-    height: 100%;
-    padding: 100px 0;
+	overflow: auto;
+    padding: 50px 0;
     background: #FAFAFA;
 }
 
@@ -108,6 +123,10 @@ figure {
 	.box-meio{
 		width: 49.5%;
 		display: inline-block;
+	}
+
+	#introducao {
+		padding-top: 10%;
 	}
 
 	nav ul{
