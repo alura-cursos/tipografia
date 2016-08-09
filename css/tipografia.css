@@ -4,12 +4,12 @@ body{
 }
 
 a{
-	color: #0C0;
+	color: #C00;
 	text-decoration: none;
 }
 
 a:hover{
-	color: #0C0;
+	color: #E00;
 	text-decoration: underline;
 }
 
@@ -40,20 +40,38 @@ nav ul li a:hover{
 }
 
 h1{
-	font-size: 3em;
+	font-size: 2.4em;
 }
 h2{
-	font-size: 2.5em;
-}
-h3{
 	font-size: 2em;
 }
-h5{
-	font-size: 1.8em;
+h3{
+	font-size: 1.7em;
+}
+h4{
+	font-size: 1.4em;
 }
 p{
-	font-size: 1.2em;
-	line-height: 1.4em;
+	font-size: 1em;
+	line-height: 1.2em;
+}
+@media (min-width: 768px){
+	h1{
+		font-size: 3em;
+	}
+	h2{
+		font-size: 2.5em;
+	}
+	h3{
+		font-size: 2em;
+	}
+	h4{
+		font-size: 1.8em;
+	}
+	p{
+		font-size: 1.2em;
+		line-height: 1.4em;
+	}
 }
 figcaption{
 	font-size: 0.8em;
@@ -69,12 +87,12 @@ figcaption{
 }
 
 .intro-titulo{
-	font: 900 3em Helvetica, Arial, sans-serif;
+	font: 900 2.5em Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 }
 
 .intro-subtitulo{
-	font: italic 1.9em Georgia, "Times New Roman", Serif;
+	font: italic 1.2em Georgia, "Times New Roman", Serif;
 }
 
 @media (min-width: 768px){
@@ -91,7 +109,7 @@ figcaption{
 /* Aula 1 - Conhecendo os diferentes tipos de fonte */
 
 #tipos {
-	text-align: center;
+	
 }
 
 .aula-1-serifa {
@@ -117,6 +135,7 @@ figcaption{
 #extensoes {
 	text-align: center;
 }
+
 .capitular:first-letter{
 	background-color: #666;
 	float: left;
@@ -126,7 +145,6 @@ figcaption{
 	padding: 0 .2em;
 	border-radius: 5px;
 	margin-right: .1em;
-
 }
 
 /* Aula 3 - Estilos aplicáveis com CSS3 */
@@ -144,6 +162,8 @@ figcaption{
 #questoes-importantes {
 }
 
-.texto-esquerda {
-	text-align: left;
+.inverso {
+	color: #FFF;
+	background-color: #666;
+	border-radius: 15px;
 }

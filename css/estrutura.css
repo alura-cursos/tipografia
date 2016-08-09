@@ -9,6 +9,11 @@ html {
     height: 100%;
 }
 
+h1, h2, h3, h4 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
 *{
 	box-sizing: border-box;
 }
@@ -22,7 +27,7 @@ html {
 }
 
 .linha {
-	overflow: auto;
+	width: 100%;
 }
 
 .box-inteiro{
@@ -34,7 +39,7 @@ html {
 .box-meio{
 	width: 100%;
 	padding: 30px;
-	display: block;
+	display: inline-block;
 	vertical-align: top;
 }
 
@@ -60,7 +65,7 @@ figure {
 
 .botao {
 	text-align: center;
-	background-color: #090;
+	background-color: #C00;
 	border: none;
 	border-radius: 5px;
 	padding: .8em 1em;
@@ -68,14 +73,14 @@ figure {
 	display: inline-block;
 }
 .botao:hover {
-	background-color: #0C0;
+	background-color: #E00;
 	color: #FFF;
 	text-decoration: none;
 }
 
 #introducao {
 	height: 100%;
-	padding-top: 20%;
+	padding-top: 50%;
 	background-image: url(../img/fundo-header.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -88,7 +93,7 @@ figure {
 #tipos {
 	overflow: auto;
     padding: 50px 0;
-    background: #FAFAFA;
+    background: #F8F8F8;
 }
 
 #extensoes {
@@ -100,7 +105,7 @@ figure {
 #estilos {
 	overflow: auto;
     padding: 50px 0;
-    background: #FAFAFA;
+    background: #F8F8F8;
 }
 
 #composicoes {
@@ -112,7 +117,7 @@ figure {
 #questoes-importantes {
 	overflow: auto;
     padding: 50px 0;
-    background: #FAFAFA;
+    background: #F8F8F8;
 }
 
 @media (min-width: 768px){
@@ -122,11 +127,10 @@ figure {
 
 	.box-meio{
 		width: 49.5%;
-		display: inline-block;
 	}
 
 	#introducao {
-		padding-top: 10%;
+		padding-top: 15%;
 	}
 
 	nav ul{
