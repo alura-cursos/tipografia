@@ -89,10 +89,12 @@ figcaption{
 .intro-titulo{
 	font: 900 2.5em Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
+	margin-bottom: .2em;
 }
 
 .intro-subtitulo{
 	font: italic 1.2em Georgia, "Times New Roman", Serif;
+	margin-bottom: 1em;
 }
 
 @media (min-width: 768px){

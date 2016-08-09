@@ -10,8 +10,8 @@ html {
 }
 
 h1, h2, h3, h4 {
-	margin-top: 0;
-	margin-bottom: 5px;
+	margin-top: .1em;
+	margin-bottom: 0;
 }
 
 *{
@@ -37,6 +37,13 @@ h1, h2, h3, h4 {
 }
 
 .box-meio{
+	width: 100%;
+	padding: 30px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.box-terco{
 	width: 100%;
 	padding: 30px;
 	display: inline-block;
@@ -76,6 +83,28 @@ figure {
 	background-color: #E00;
 	color: #FFF;
 	text-decoration: none;
+}
+
+ol {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+}
+ol li {
+    counter-increment: step-counter;
+    margin-bottom: 1em;
+}
+ol li::before {
+    content: counter(step-counter);
+    margin: -3px 5px 0 -40px;
+    margin-left: -40px;
+    margin-right: 5px;
+    background-color: #666;
+    color: #FFF;
+    border-radius: 50%;
+    font-weight: bold;
+    padding: .2em .5em;
+    float: left;
 }
 
 #introducao {
@@ -129,8 +158,21 @@ figure {
 		width: 49.5%;
 	}
 
+	.box-terco{
+		width: 32.75%;
+	}
+
 	#introducao {
 		padding-top: 15%;
+	}
+
+	h1, h2, h3, h4 {
+		margin-top: .3em;
+		margin-bottom: 0;
+	}
+
+	p{
+		margin-bottom: 1.8em;
 	}
 
 	nav ul{
