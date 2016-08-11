@@ -3,6 +3,11 @@ body{
 	color: #666;
 }
 
+small {
+	font-size: 50%;
+	font-weight: normal;
+}
+
 a{
 	color: #C00;
 	text-decoration: none;
@@ -14,7 +19,7 @@ a:hover{
 }
 
 .marca{
-	color: #F00;
+	color: #C00;
 	text-decoration: none;
 	font-size: 2em;
 	line-height: 20px;
@@ -30,14 +35,21 @@ a:hover{
 }
 
 nav ul li a{
+	font-size: 0.8em;
 	color: #FFF;
 	text-decoration: none;
 	line-height: 20px;
+	text-transform: uppercase;
 }
 nav ul li a:hover{
-	background-color: #F00;
+	background-color: #C00;
+	color: #FFF;
 	text-decoration: none;
 }
+h1, h2, h3, h4{
+	margin: .4em 0 .2em;
+}
+
 
 h1{
 	font-size: 2.4em;
@@ -49,11 +61,19 @@ h3{
 	font-size: 1.7em;
 }
 h4{
-	font-size: 1.4em;
+	font-size: 1.1em;
 }
-p{
+p, pre{
+	margin: 0 0 1em;
 	font-size: 1em;
 	line-height: 1.2em;
+}
+pre{
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 @media (min-width: 768px){
 	h1{
@@ -66,9 +86,9 @@ p{
 		font-size: 2em;
 	}
 	h4{
-		font-size: 1.8em;
+		font-size: 1.3em;
 	}
-	p{
+	p, pre{
 		font-size: 1.2em;
 		line-height: 1.4em;
 	}
@@ -87,14 +107,16 @@ figcaption{
 }
 
 .intro-titulo{
-	font: 900 2.5em Helvetica, Arial, sans-serif;
+	font: 900 2.5em;
+	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: .2em;
 }
 
 .intro-subtitulo{
-	font: italic 1.2em Georgia, "Times New Roman", Serif;
+	font: 100 italic 1.2em Georgia, "Times New Roman", Serif;
 	margin-bottom: 1em;
+	font-weight:;
 }
 
 @media (min-width: 768px){
@@ -109,10 +131,6 @@ figcaption{
 }
 
 /* Aula 1 - Conhecendo os diferentes tipos de fonte */
-
-#tipos {
-	
-}
 
 .aula-1-serifa {
 	font-family: "Times New Roman", Georgia, Serif;
@@ -134,20 +152,33 @@ figcaption{
 
 /* Aula 2 - Extensões, uso legal e instalação de fontes */
 
-#extensoes {
-	text-align: center;
-}
-
 .capitular:first-letter{
 	background-color: #666;
 	float: left;
 	color: #FFF;
-	font-size: 2.1em;
+	font-size: 1.8em;
 	line-height: 1.2em;
 	padding: 0 .2em;
 	border-radius: 5px;
 	margin-right: .1em;
 }
+
+@media (min-width: 768px){
+	.capitular:first-letter{
+		font-size: 2.1em;
+	}
+}
+
+@font-face {
+	font-family: Rounded_Elegance;
+	src: url('../fonts/Rounded_Elegance.ttf');
+}
+
+h1, h2, h3, h4, nav li {
+    font-family: Rounded_Elegance, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
 
 /* Aula 3 - Estilos aplicáveis com CSS3 */
 

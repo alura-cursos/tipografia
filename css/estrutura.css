@@ -9,11 +9,6 @@ html {
     height: 100%;
 }
 
-h1, h2, h3, h4 {
-	margin-top: .1em;
-	margin-bottom: 0;
-}
-
 *{
 	box-sizing: border-box;
 }
@@ -32,20 +27,21 @@ h1, h2, h3, h4 {
 
 .box-inteiro{
 	width: 100%;
-	padding: 30px;
-	float: left;
+	padding: 30px 30px 15px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .box-meio{
 	width: 100%;
-	padding: 30px;
+	padding: 30px 30px 15px;
 	display: inline-block;
 	vertical-align: top;
 }
 
 .box-terco{
 	width: 100%;
-	padding: 30px;
+	padding: 30px 30px 15px;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -130,6 +126,14 @@ ol li::before {
     padding: 50px 0;
     background: #FFF;
 }
+.icone-sistema{
+	display: inline;
+	float: left;
+	margin-right: .5em;
+	line-height: 50%;
+	overflow: auto;
+	height: 40px;
+}
 
 #estilos {
 	overflow: auto;
@@ -166,13 +170,8 @@ ol li::before {
 		padding-top: 15%;
 	}
 
-	h1, h2, h3, h4 {
-		margin-top: .3em;
-		margin-bottom: 0;
-	}
-
-	p{
-		margin-bottom: 1.8em;
+	.icone-sistema{
+		height: 50px;
 	}
 
 	nav ul{
