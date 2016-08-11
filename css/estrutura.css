@@ -118,7 +118,7 @@ ol li::before {
 #tipos {
 	overflow: auto;
     padding: 100px 0;
-    background: #F8F8F8;
+    background: #F1F1F1;
 }
 
 #extensoes {
@@ -128,23 +128,45 @@ ol li::before {
 }
 .info-browser {
 	width: 100%;
-	font-size: 0.8em;
+	font-size: 0.5em;
 }
 .info-browser td {
     border: none;
     white-space: 0;
     text-align: center;
-    padding: .4em;
+    padding: .6em;
     vertical-align: top;
 }
 
+.info-browser th {
+    background-color: #666;
+    color: #FFF;
+    font-weight: normal;
+    padding: .6em;
+}
+
+.info-browser caption{
+	caption-side: bottom;
+	text-align: left;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin-top: .2em;
+}
+
 .info-browser tr:nth-child(even) {
     background-color: #F1F1F1;
 }
-
-
-.info-browser tr:nth-child(even) {
-    background-color: #F1F1F1;
+@media (min-width: 768px){
+	.info-browser {
+		font-size: 1em;
+	}
+	.info-browser caption{
+		caption-side: bottom;
+		text-align: left;
+		font-size: 1em;
+		line-height: 1.2em;
+		margin-top: .2em;
+	}
 }
 
 .icone-sistema{
@@ -159,7 +181,7 @@ ol li::before {
 #estilos {
 	overflow: auto;
     padding: 100px 0;
-    background: #F8F8F8;
+    background: #F1F1F1;
 }
 
 #composicoes {
@@ -171,7 +193,7 @@ ol li::before {
 #questoes-importantes {
 	overflow: auto;
     padding: 100px 0;
-    background: #F8F8F8;
+    background: #F1F1F1;
 }
 
 
