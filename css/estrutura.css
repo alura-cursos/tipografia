@@ -119,6 +119,7 @@ ol li::before {
 	overflow: auto;
     padding: 100px 0;
     background: #F1F1F1;
+    text-align: center;
 }
 
 #extensoes {
@@ -129,6 +130,8 @@ ol li::before {
 .info-browser {
 	width: 100%;
 	font-size: 0.5em;
+	border-spacing: .2em;
+    border-collapse: separate;
 }
 .info-browser td {
     border: none;
@@ -137,14 +140,12 @@ ol li::before {
     padding: .6em;
     vertical-align: top;
 }
-
 .info-browser th {
     background-color: #666;
     color: #FFF;
     font-weight: normal;
     padding: .6em;
 }
-
 .info-browser caption{
 	caption-side: bottom;
 	text-align: left;
@@ -159,6 +160,7 @@ ol li::before {
 @media (min-width: 768px){
 	.info-browser {
 		font-size: 1em;
+		border-spacing: .1em;
 	}
 	.info-browser caption{
 		caption-side: bottom;

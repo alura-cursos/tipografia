@@ -2,7 +2,6 @@ body{
 	font-family: Helvetica, Arial, sans-serif;
 	color: #666;
 }
-
 small {
 	font-size: 50%;
 	font-weight: normal;
@@ -17,7 +16,20 @@ a:hover{
 	color: #E00;
 	text-decoration: underline;
 }
+.inverso {
+	color: #FFF;
+	background-color: #666;
+	border-radius: 15px;
+}
+.inverso a{
+	color: #0CC;
+	text-decoration: none;
+}
 
+.inverso a:hover{
+	color: #0EE;
+	text-decoration: underline;
+}
 .marca{
 	color: #C00;
 	text-decoration: none;
@@ -199,10 +211,4 @@ h1, h2, h3, h4, nav li {
 /* Aula 1 - Questões importantes: erros comuns e as fontes nos meios digitais */
 
 #questoes-importantes {
-}
-
-.inverso {
-	color: #FFF;
-	background-color: #666;
-	border-radius: 15px;
 }
