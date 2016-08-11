@@ -117,41 +117,63 @@ ol li::before {
 
 #tipos {
 	overflow: auto;
-    padding: 50px 0;
+    padding: 100px 0;
     background: #F8F8F8;
 }
 
 #extensoes {
 	overflow: auto;
-    padding: 50px 0;
+    padding: 100px 0;
     background: #FFF;
 }
+.info-browser {
+	width: 100%;
+	font-size: 0.8em;
+}
+.info-browser td {
+    border: none;
+    white-space: 0;
+    text-align: center;
+    padding: .4em;
+    vertical-align: top;
+}
+
+.info-browser tr:nth-child(even) {
+    background-color: #F1F1F1;
+}
+
+
+.info-browser tr:nth-child(even) {
+    background-color: #F1F1F1;
+}
+
 .icone-sistema{
 	display: inline;
 	float: left;
 	margin-right: .5em;
-	line-height: 50%;
+	line-height: 100%;
 	overflow: auto;
 	height: 40px;
 }
 
 #estilos {
 	overflow: auto;
-    padding: 50px 0;
+    padding: 100px 0;
     background: #F8F8F8;
 }
 
 #composicoes {
 	overflow: auto;
-    padding: 50px 0;
+    padding: 100px 0;
     background: #FFF;
 }
 
 #questoes-importantes {
 	overflow: auto;
-    padding: 50px 0;
+    padding: 100px 0;
     background: #F8F8F8;
 }
+
 
 @media (min-width: 768px){
 	.container {
