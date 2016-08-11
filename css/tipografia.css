@@ -1,5 +1,5 @@
 body{
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	color: #666;
 }
 small {
@@ -75,6 +75,9 @@ h3{
 h4{
 	font-size: 1.1em;
 }
+p {
+	font-weight: 300;
+}
 p, pre{
 	margin: 0 0 1em;
 	font-size: 1em;
@@ -103,6 +106,10 @@ pre{
 	}
 	p, pre{
 		font-size: 1.2em;
+		line-height: 1.4em;
+	}
+	pre{
+		font-size: 1.1em;
 		line-height: 1.4em;
 	}
 }
@@ -165,22 +172,7 @@ figcaption{
 
 /* Aula 2 - Extensões, uso legal e instalação de fontes */
 
-.capitular:first-letter{
-	background-color: #666;
-	float: left;
-	color: #FFF;
-	font-size: 1.8em;
-	line-height: 1.2em;
-	padding: 0 .2em;
-	border-radius: 5px;
-	margin-right: .1em;
-}
 
-@media (min-width: 768px){
-	.capitular:first-letter{
-		font-size: 2.1em;
-	}
-}
 
 @font-face {
 	font-family: 'Rounded_Elegance';
@@ -197,10 +189,30 @@ h1, h2, h3, h4, nav li {
 	font-weight: normal;
 }
 
+p {
+	font-weight: 300;
+}
 
 /* Aula 3 - Estilos aplicáveis com CSS3 */
 
 #estilos {
+}
+
+.capitular:first-letter{
+	background-color: #666;
+	float: left;
+	color: #FFF;
+	font-size: 1.8em;
+	line-height: 1.2em;
+	padding: 0 .2em;
+	border-radius: 5px;
+	margin-right: .1em;
+}
+
+@media (min-width: 768px){
+	.capitular:first-letter{
+		font-size: 2.1em;
+	}
 }
 
 /* Aula 4 - Composições: alinhamento e combinações de fontes */

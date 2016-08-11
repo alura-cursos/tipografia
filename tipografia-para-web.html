@@ -10,6 +10,7 @@
 
 		<!-- Tipografia CSS -->
 		<link href="css/tipografia.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	</head>
 	<body id="topo-da-pagina">
 		<nav>
@@ -168,22 +169,27 @@
 						<h3>@font-face</h3>
 						<p>A propriedade CSS <b>@font-face</b> permite que adicionemos fontes específicas em nosso site e o usuário poderá ver mesmo que não as tenha em seu computador. Vejamos como isso funciona com a fonte <a href="http://www.dafont.com/pt/rounded-elegance.font" target="_blank">Rounded Elegance</a>.</p>
 						<p>Acesse o arquivo <b>tipografia.css</b> e adicione o seguinte:</p>
-						<pre>
+						<blockquote>
+									<pre>
 @font-face {
 	font-family: Rounded_Elegance;
 	src: url('../fonts/Rounded_Elegance.ttf');
 }
-						</pre>
+									</pre>
+						</blockquote>
 						<p>Vamos estilizar todos os títulos e os itens do menu de navegação de nosso site com a fonte que incorporamos, então inserimos no CSS:</p>
-						<pre>
+						<blockquote>
+									<pre>
 h1, h2, h3, h4, nav li {
 	font-family: Rounded_Elegance, "Century Gothic", CenturyGothic, AppleGothic, "Trebuchet MS", sans-serif;
 	font-weight: normal;
 }
-						</pre>
-						<p>Definimos que o <em>font-weight</em> é <em>normal</em> para resetar o comportamento padrão dos títulos. Também definimos outras fontes que podem substituir nossa fonte caso ela não seja encontrada, ou renderizada pelo navegador do usuário. Uma boa referência para saber quais são as fontes mais comuns nos computadores é o site<a href="http://www.cssfontstack.com/" target="_blank"> CSS Font Stack</a>.</p>
-						<p>Se você testou esta página em um navegador atual, deve ter visto a fonte incorporada corretamente nos títulos desta página (só a introdução possui classes personalizadas). Mas, como nem tudo na interet é simples, o ideal é incorporarmos outros formatos de fontes para que funcione como desejamos para a maior parte dos usuários. O código <em>@font-face</em> ficará assim:</p>
-						<pre>
+									</pre>
+						</blockquote>
+						<p>Definimos que o <em>font-weight</em> é <em>normal</em> para resetar o comportamento padrão dos títulos. Também definimos outras fontes que poderão substituir a que escolhemos, caso ela não seja encontrada ou renderizada pelo navegador do usuário. Uma boa referência para saber quais são as fontes mais comuns nos computadores é o site <a href="http://www.cssfontstack.com/" target="_blank">CSS Font Stack</a>.</p>
+						<p>Se você testou esta página em um navegador atual, deve ter visto a fonte incorporada corretamente em todos os títulos (só a introdução que possui classes personalizadas). Mas, como nem tudo na interet é simples, o ideal é incorporarmos outros formatos de fontes para que funcione como desejamos para a maior parte dos usuários. O css <em>@font-face</em> ficará assim:</p>
+						<blockquote>
+									<pre>
 @font-face {
 	font-family: 'Rounded_Elegance';
 		src: url('../fonts/Rounded_Elegance.eot'); /* Modo compatível com IE 9 */
@@ -193,7 +199,8 @@ h1, h2, h3, h4, nav li {
 			url('../fonts/Rounded_Elegance.ttf')  format('truetype'), /* Safari, Android e iOS */
 			url('../fonts/Rounded_Elegance.svg#svgFontName') format('svg'); /* iOS anteriores */
 }
-						</pre>
+									</pre>
+						</blockquote>
 						<p>Com isso damos suporte à maior parte dos navegadores.</p>
 						<table class="info-browser">
 							<tbody>
@@ -246,12 +253,8 @@ h1, h2, h3, h4, nav li {
 									<td><span class="deprecated">Não suporta</span></td>
 								</tr>
 							</tbody>
-							<caption>
-* IE: O formato da fonte só funciona quando definido para ser "instalável".
-							</caption>
-							<caption>
-* Firefox: Não suportado por padrão, mas pode ser ativado nas configurações do navegador.
-							</caption>
+							<caption>* IE: O formato da fonte só funciona quando definido para ser "instalável".</caption>
+							<caption>* Firefox: Não suportado por padrão, mas pode ser ativado nas configurações do navegador.</caption>
 						</table>
 					</div>
 					<div class="box-inteiro inverso">
@@ -260,6 +263,33 @@ h1, h2, h3, h4, nav li {
 					</div>
 					<div class="box-inteiro">
 						<h3>Google Fonts</h3>
+						<p>Também é possível utilizar fontes específicas incorporadas de serviços como o <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a>.</p>
+						<p>Como exemplo deste curso, vamos incorporar a fonte <a href="https://www.google.com/fonts#UsePlace:use/Collection:Lato" target="_blank">Lato</a>. Vamos selecionar os estilos Light 300, Light 300 Italic, Normal 400, Normal 400 Italic, Bold 700 e Bold 700 Italic, com isso teremos 3 pesos e suas variações para o itálico:
+						</p>
+						<img src="img/aula-2/lato-google-fonts-1.png">
+						<p>O próprio <em>Google Fonts</em> nos dá o seguinte código para adicionarmos ao <em>Header</em>:</p>
+						<blockquote>
+							<pre>
+&lt;link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700,700italic' rel='stylesheet' type='text/css'&gt;
+							</pre>
+						</blockquote>
+						<p>Então, vamos também definir o <em>font-family</em> do <em>body</em> no <b>tipografia.css</b>:</p>
+						<blockquote>
+							<pre>
+body{
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	color: #666;
+}
+							</pre>
+						</blockquote>
+						<p>Todas as fontes que não tinham sido estilizadas em nosso arquivo mudaram (basicamente, os parágrafos, as listas e a tabela). Vamos deixar os parágrafos ainda mais suaves e agradáveis para a leitura? Defina o seguinte no <b>tipografia.css</b>:</p>
+						<blockquote>
+							<pre>
+p {
+	font-weight: 300;
+}
+							</pre>
+						</blockquote>
 					</div>
 				</div>
 			</div>
