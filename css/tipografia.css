@@ -30,12 +30,6 @@ a:hover{
 	color: #0EE;
 	text-decoration: underline;
 }
-.marca{
-	color: #C00;
-	text-decoration: none;
-	font-size: 2em;
-	line-height: 20px;
-}
 
 .botao {
 	font-size: 1.2em;
@@ -193,7 +187,12 @@ p {
 	font-weight: 300;
 }
 
-/* Aula 3 - Estilos aplicáveis com CSS3 */
+/* Aula 3 - Composições: alinhamento e combinações de fontes */
+
+#composicoes {
+}
+
+/* Aula 4 - Estilos aplicáveis com CSS3 */
 
 #estilos {
 }
@@ -229,11 +228,6 @@ p {
 	.capitular-inverso:first-letter{
 		font-size: 2.1em;
 	}
-}
-
-/* Aula 4 - Composições: alinhamento e combinações de fontes */
-
-#composicoes {
 }
 
 /* Aula 1 - Questões importantes: erros comuns e as fontes nos meios digitais */
