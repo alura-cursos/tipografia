@@ -180,13 +180,13 @@ ol li::before {
 	height: 40px;
 }
 
-#estilos {
+#composicoes {
 	overflow: auto;
     padding: 100px 0;
     background: #F1F1F1;
 }
 
-#composicoes {
+#estilos {
 	overflow: auto;
     padding: 100px 0;
     background: #FFF;
