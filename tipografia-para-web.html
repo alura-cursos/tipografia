@@ -10,7 +10,7 @@
 
 		<!-- Tipografia CSS -->
 		<link href="css/tipografia.css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Lato:300,300i,400,400i,700,700i|Roboto+Slab:700" rel="stylesheet">
 	</head>
 	<body id="topo-da-pagina">
 		<nav>
@@ -263,14 +263,14 @@ h1, h2, h3, h4, nav li {
 					</div>
 					<div class="box-inteiro">
 						<h3>Google Fonts</h3>
-						<p>Também é possível utilizar fontes específicas incorporadas de serviços como o <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a>.</p>
-						<p>Como exemplo deste curso, vamos incorporar a fonte <a href="https://www.google.com/fonts#UsePlace:use/Collection:Lato" target="_blank">Lato</a>, ela combina com a fonte dos títulos sem grandes variações — seu formato também é arredondado, mas é mais fino. Vamos selecionar os estilos Light 300, Light 300 Italic, Normal 400, Normal 400 Italic, Bold 700 e Bold 700 Italic, com isso teremos 3 pesos e suas variações para o itálico:
+						<p>Também é possível utilizar fontes específicas incorporadas de serviços como o <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>.</p>
+						<p>Como exemplo deste curso, vamos incorporar a fonte <a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a>, ela combina com a fonte dos títulos sem grandes variações — seu formato também é arredondado, mas é mais fino. Vamos selecionar os estilos Light 300, Light 300 Italic, Normal 400, Normal 400 Italic, Bold 700 e Bold 700 Italic, com isso teremos 3 pesos e suas variações para o itálico:
 						</p>
 						<img src="img/aula-2/lato-google-fonts-1.png">
-						<p>O próprio <em>Google Fonts</em> nos dá o seguinte código para adicionarmos ao <em>Header</em>:</p>
+						<p>O próprio <a href="https://fonts.google.com/" target="_blank">Google Fonts</a> nos dá o seguinte código para adicionarmos ao <em>Header</em>:</p>
 						<blockquote>
 							<pre>
-&lt;link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,400italic,700,700italic' rel='stylesheet' type='text/css'&gt;
+&lt;link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet"&gt;
 							</pre>
 						</blockquote>
 						<p>Então, vamos também definir o <em>font-family</em> do <em>body</em> no <b>tipografia.css</b>:</p>
@@ -295,6 +295,15 @@ p {
 						<p class="capitular-inverso">Repare como a leitura dos parágrafos, ou seja, de qualquer volume considerável de texto, ficou muito mais agradável. Ao diminuirmos a espessura da letra, conseguimos um texto menos denso. Mas cuidado ao utilizar a espessura mais fina das fontes. Se a fonte ficar muito fina, pode prejudicar a legibilidade.</p>
 						<p>A altura da linha (<em>line-height</em>) e alguma margem entre os parágrafos são outros fatores interessantes para que haja boa continuidade na leitura.</p>
 					</div>
+					<div class="box-inteiro">
+						<h4>Incorporando mais estilos</h4>
+						<p>Na etapa seguinte, a de composições, veremos como criar novas combinações de fontes. Para isso, vamos incorporar também as fontes <a href="https://fonts.google.com/specimen/Roboto+Slab" target="_blank">Roboto Slab bold 700</a> e <a href="https://fonts.google.com/specimen/Lobster" target="_blank">Lobster regular 400</a>, então substitua o código que incluimos no <em>header</em> por:</p>
+						<blockquote>
+							<pre>
+&lt;link href="https://fonts.googleapis.com/css?family=Lobster|Lato:300,300i,400,400i,700,700i|Roboto+Slab:700" rel="stylesheet"&gt;
+							</pre>
+						</blockquote>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -303,6 +312,9 @@ p {
 				<div class="linha">
 					<div class="box-inteiro">
 						<h1>Composições: alinhamento e combinações de fontes</h1>
+					</div>
+					<div class="box-inteiro">
+						<h2>Princípios para uma tipografia de boa legibilidade</h2>
 					</div>
 					<div class="box-terco">
 						<h3>Hierarquia</h3>
@@ -325,27 +337,56 @@ p {
 						<h4>Quero gerar um aspecto mais moderno ou mais clássico?</h4>
 						<p>As fontes serifadas têm origem no alfabeto romano e são herança da imprensa de Gutenberg, por volta de 1439. As fontes sem serifa, também chamadas de grotescas, passaram a ser utilizadas funcionalmente pela escola Bauhaus, fato muito mais recente – 1919, afim de criar composições com design mais moderno. É possível combinar ambas as fontes e até outros tipos, tudo depende da proposta do seu projeto.</p>
 						<h4>Posso utilizar duas fontes do mesmo tipo?</h4>
-						<p>Pode, mas é interessante que as fontes se diferenciem em algum aspecto. Nesta página, por exemplo, combinamos duas fontes sem serifa em diversos blocos. Nos títulos utlizamos a fonte <a href="http://www.dafont.com/pt/rounded-elegance.font" target="_blank">Rounded Elegance</a>, que possui letras com aspecto bem mais arredondado que a fonte que escolhemos para o <em>body</em>, <a href="https://www.google.com/fonts#UsePlace:use/Collection:Lato" target="_blank">Lato</a>, que possui as características tradicionais de uma letra de forma. Podemos notar isso bem ao vermos a diferença que há entre as duas fontes por meio da letra "a" minúscula.</p>
+						<p>Pode, mas é interessante que as fontes se diferenciem em algum aspecto. Nesta página, por exemplo, combinamos duas fontes sem serifa na maioria dos blocos. Nos títulos utlizamos a fonte <a href="http://www.dafont.com/pt/rounded-elegance.font" target="_blank">Rounded Elegance</a>, que possui letras com aspecto bem mais arredondado que a fonte que escolhemos para o <em>body</em>, <a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a>, que possui as características tradicionais de uma letra de forma. Podemos notar isso bem ao vermos a diferença que há entre as duas fontes por meio da letra "a" minúscula.</p>
+						<h4>E outros estilos de fonte, posso utilizar na combinação?</h4>
+						<p>Como vimos lá no começo, fontes de espaçamento fixo, cursivas e fantasias podem comprometer a legibilidade, por isso não são recomendadas para grandes blocos de texto, como parágrafos. Porém, elas podem fazer parte do layout como elementos de destaque.</p>
+					</div>
+				</div>
+				<div class="linha exemplo">
+					<div class="box-inteiro">
+						<h2>Exemplos de combinações</h2>
+					</div>
+					<div class="box-terco">
+						<h3 class="aula-3-titulo-serifa">Título com serifa</h3>
+						<p>Parágrafo sem serifa. Os sites dos jornais <a href="http://www.folha.uol.com.br/" target="_blank">Folha</a> e <a href="http://www.estadao.com.br/" target="_blank">Estadão</a>, por exemplo, utilizam esse padrão em muitos destaques de sua página principal. A tipografia serifada veio do jornal impresso, já a sem serifa é utilizada como apoio para não deixar a página tão pesada, carregada de textos com serifa. Nas páginas internas, de matérias, utilizam o mesmo padrão que o jornal impresso – somente fontes serifadas.</p>
+					</div>
+					<div class="box-terco">
+						<h3 class="aula-3-titulo-fantasia">Título fantasia</h3>
+						<p class="aula-3-paragrafo-serifa">Parágrafo com serifa. O título de fonte fantasia (neste caso, poderia ser considerada cursiva) não possui necessariamente regras, mas possui estética que pode transmitir características da identidade. Já o parágrafo com serifa tem a intenção de tornar a leitura mais fluente. Um exemplo similar podemos encontrar no site</p>
+					</div>
+					<div class="box-terco aula-3-destaque-slab">
+						<p>Fontes Slab são fontes de origem egípcia com serifas quadradas e espessas. Funcionam bem nestes elementos de destaque e também em títulos, como utiliza o veículo de informação <a href="http://www.carosamigos.com.br/" target="_blank">Caros Amigos</a>.</p>
+					</div>
+					<div class="box-inteiro">
+						<h3>Diagrama de combinação de fontes famosas</h3>
+						<p>O diagrama abaixo, de setembro de 1992, mostra como fontes conhecidas se comportam umas com as outras, se elas combinam bem, se são uma combinação moderada ou se não combinam. Caso você pretenda utilizar uma fonte que não está no diagrama, encontre uma fonte do diagrama com características parecidas e veja com quais fontes ela combina.</p>
+					</div>
+					<div class="box-inteiro">
+						<h3>Diagrama de combinação de fontes Google</h3>
+						<p>Este diagrama foi inspirado no diagrama anterior, só que neste caso, combina as famílias tipográficas do <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>. Caso utilize essas fontes em seu projeto, é uma boa referência para consultar e criar as suas combinações.</p>
+						<p>*Os diagramas servem como referência para boa utilização de fontes, não são uma regra. Outras combinações podem ser realizadas com as fontes citadas nos diagramas.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="estilos">
 			<div class="container">
-				<div class="box-inteiro">
+				<div class="box-inteiro">   
 					<h1>Estilos aplicáveis com CSS3</h1>
 				</div>
 				<div class="box-inteiro">
-					<h3>Como produzir uma capitular?</h3>
+					<h3>Distribuindo uma paleta de cores nos elementos tipográficos</h3>
 				</div>
 				<div class="box-inteiro">
-					<h3>Distribuindo uma paleta de cores nos elementos tipográficos</h3>
+					<h3>Como produzir uma capitular?</h3>
 				</div>
 			</div>
 		</section>
 		<section id="questoes-importantes">
 			<div class="container">
-				<h1>Questões importantes: erros comuns e as fontes nos meios digitais</h1>
+				<div class="box-inteiro">
+					<h1>Questões importantes: erros comuns e as fontes nos meios digitais</h1>
+				</div>
 			</div>
 		</section>
 		<footer>

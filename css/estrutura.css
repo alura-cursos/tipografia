@@ -186,6 +186,12 @@ ol li::before {
     background: #F1F1F1;
 }
 
+.exemplo {
+	border: 2px solid #066;
+	border-radius: 15px;
+	background-color: #FFF;
+}
+
 #estilos {
 	overflow: auto;
     padding: 100px 0;
@@ -228,7 +234,7 @@ ol li::before {
 		display: inline-block;
 	}
 	nav ul li a{
-		padding: 10px;
+		padding: .7em;
 		box-sizing: border-box;
 		border-radius: 5px;
 	}

@@ -16,20 +16,6 @@ a:hover{
 	color: #E00;
 	text-decoration: underline;
 }
-.inverso {
-	color: #FFF;
-	background-color: #666;
-	border-radius: 15px;
-}
-.inverso a{
-	color: #0CC;
-	text-decoration: none;
-}
-
-.inverso a:hover{
-	color: #0EE;
-	text-decoration: underline;
-}
 
 .botao {
 	font-size: 1.2em;
@@ -41,7 +27,7 @@ a:hover{
 }
 
 nav ul li a{
-	font-size: 0.8em;
+	font-size: 0.7em;
 	color: #FFF;
 	text-decoration: none;
 	line-height: 20px;
@@ -192,9 +178,59 @@ p {
 #composicoes {
 }
 
+.aula-3-titulo-serifa{
+	font-family: Georgia, "Times New Roman", Serif;
+}
+
+.aula-3-titulo-fantasia{
+	font-family: 'Lobster', cursive;
+	font-weight: normal;
+}
+
+.aula-3-paragrafo-serifa{
+	font-family: Georgia, "Times New Roman", Serif;
+	font-weight: lighter;
+}
+
+.aula-3-destaque-slab{
+	text-align: center;
+	background-color: #066;
+	border-radius: 15px;
+	color: #FFF;
+	font-family: 'Roboto Slab', Serif;
+}
+
+.aula-3-destaque-slab p{
+	font-variant: normal;
+	font-weight: 700;
+	font-size: 1.6em;
+}
+
+.aula-3-destaque-slab a{
+	color: #0CC;
+}
+
+.aula-3-destaque-slab a:hover{
+	color: #0FF;
+}
 /* Aula 4 - Estilos aplicáveis com CSS3 */
 
 #estilos {
+}
+
+.inverso {
+	color: #FFF;
+	background-color: #666;
+	border-radius: 15px;
+}
+.inverso a{
+	color: #0CC;
+	text-decoration: none;
+}
+
+.inverso a:hover{
+	color: #0EE;
+	text-decoration: underline;
 }
 
 .capitular:first-letter{
