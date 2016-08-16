@@ -25,12 +25,14 @@ a:hover{
 	text-decoration: none;
 	text-align: center;
 }
-
-nav ul li a{
+nav ul li {
+	line-height: 1em;
+	margin: 0;
 	font-size: 0.7em;
+}
+nav ul li a{
 	color: #FFF;
 	text-decoration: none;
-	line-height: 20px;
 	text-transform: uppercase;
 }
 nav ul li a:hover{
@@ -55,10 +57,7 @@ h3{
 h4{
 	font-size: 1.1em;
 }
-p {
-	font-weight: 300;
-}
-p, pre{
+p, pre, li{
 	margin: 0 0 1em;
 	font-size: 1em;
 	line-height: 1.2em;
@@ -84,7 +83,7 @@ pre{
 	h4{
 		font-size: 1.3em;
 	}
-	p, pre{
+	p, pre, li{
 		font-size: 1.2em;
 		line-height: 1.4em;
 	}
@@ -169,7 +168,7 @@ h1, h2, h3, h4, nav li {
 	font-weight: normal;
 }
 
-p {
+p, li {
 	font-weight: 300;
 }
 
