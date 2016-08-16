@@ -205,15 +205,6 @@ ol li::before {
 	.container {
 	    width: 750px;
 	}
-
-	.box-meio{
-		width: 49.5%;
-	}
-
-	.box-terco{
-		width: 32.75%;
-	}
-
 	#introducao {
 		padding-top: 15%;
 	}
@@ -240,6 +231,15 @@ ol li::before {
 	.container {
 	    width: 970px;
 	}
+	
+	.box-meio{
+		width: 49.5%;
+	}
+
+	.box-terco{
+		width: 32.75%;
+	}
+
 }
 
 @media (min-width: 1200px){

@@ -178,17 +178,18 @@ p, li {
 }
 
 .aula-3-titulo-serifa{
-	font-family: Georgia, "Times New Roman", Serif;
+	font-family: 'Droid Serif', Georgia, "Times New Roman", Serif;
+	font-weight: bold;
 }
 
-.aula-3-titulo-fantasia{
-	font-family: 'Lobster', cursive;
-	font-weight: normal;
+.aula-3-titulo-sem-serifa{
+	font-family: 'Lato', cursive;
+	font-weight: bold;
 }
 
-.aula-3-paragrafo-serifa{
-	font-family: Georgia, "Times New Roman", Serif;
-	font-weight: lighter;
+.aula-3-paragrafo-slab{
+	font-family: 'Roboto Slab', Serif;
+	font-weight: 300;
 }
 
 .aula-3-destaque-slab{
@@ -202,7 +203,7 @@ p, li {
 .aula-3-destaque-slab p{
 	font-variant: normal;
 	font-weight: 700;
-	font-size: 1.6em;
+	font-size: 1.55em;
 }
 
 .aula-3-destaque-slab a{
