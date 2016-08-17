@@ -46,21 +46,21 @@ h1, h2, h3, h4{
 
 
 h1{
-	font-size: 2.4em;
+	font-size: 1.8em;
 }
 h2{
-	font-size: 2em;
+	font-size: 1.6em;
 }
 h3{
-	font-size: 1.7em;
+	font-size: 1.4em;
 }
 h4{
-	font-size: 1.1em;
+	font-size: 1.2em;
 }
 p, pre, li{
 	margin: 0 0 1em;
 	font-size: 1em;
-	line-height: 1.2em;
+	line-height: 1.3em;
 }
 pre{
 	color: #699;
@@ -113,7 +113,7 @@ figcaption{
 }
 
 .intro-subtitulo{
-	font: 100 italic 1.2em Georgia, "Times New Roman", Serif;
+	font: 100 italic 1.2em 'Droid Serif', Georgia, "Times New Roman", Serif;
 	margin-bottom: 1em;
 	font-weight:;
 }
@@ -194,9 +194,6 @@ p, li {
 
 .aula-3-destaque-slab{
 	text-align: center;
-	background-color: #066;
-	border-radius: 15px;
-	color: #FFF;
 	font-family: 'Roboto Slab', Serif;
 }
 
@@ -216,21 +213,6 @@ p, li {
 /* Aula 4 - Estilos aplicáveis com CSS3 */
 
 #estilos {
-}
-
-.inverso {
-	color: #FFF;
-	background-color: #666;
-	border-radius: 15px;
-}
-.inverso a{
-	color: #0CC;
-	text-decoration: none;
-}
-
-.inverso a:hover{
-	color: #0EE;
-	text-decoration: underline;
 }
 
 .capitular:first-letter{
@@ -266,7 +248,7 @@ p, li {
 	}
 }
 
-/* Aula 1 - Questões importantes: erros comuns e as fontes nos meios digitais */
+/* Aula 5 - Questões importantes: erros comuns e as fontes nos meios digitais */
 
 #questoes-importantes {
 }

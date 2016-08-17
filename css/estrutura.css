@@ -7,6 +7,7 @@ body {
 html {
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 
 *{
@@ -40,6 +41,21 @@ html {
 	padding: 30px 30px 15px;
 	display: inline-block;
 	vertical-align: top;
+}
+
+.inverso {
+	color: #FFF;
+	background-color: #666;
+	border-radius: 15px;
+}
+.inverso a{
+	color: #0CC;
+	text-decoration: none;
+}
+
+.inverso a:hover{
+	color: #0EE;
+	text-decoration: underline;
 }
 
 nav {
@@ -115,7 +131,6 @@ ol li::before {
 	overflow: auto;
     padding: 100px 0;
     background: #F1F1F1;
-    text-align: center;
 }
 
 #extensoes {
@@ -188,10 +203,71 @@ ol li::before {
 	background-color: #FFF;
 }
 
+.aula-3-destaque-slab{
+	background-color: #066;
+	border-radius: 15px;
+	color: #FFF;
+}
+
 #estilos {
 	overflow: auto;
     padding: 100px 0;
     background: #FFF;
+}
+.paleta{
+	list-style-type: none;
+	padding: 0;
+}
+
+.paleta li {
+	display: inline-block;
+	padding: .5em;
+	margin: .25em;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.paleta-000000{
+	background-color: #000;
+	color: #FFF;
+}
+
+.paleta-666666{
+	background-color: #666;
+	color: #FFF;
+}
+
+.paleta-f1f1f1{
+	background-color: #F1F1F1;
+}
+
+.paleta-ffffff{
+	background-color: #FFF;
+}
+
+.paleta-cc0000{
+	background-color: #C00;
+	color: #FFF;
+}
+
+.paleta-ee0000{
+	background-color: #E00;
+	color: #FFF;
+}
+
+.paleta-006666{
+	background-color: #066;
+	color: #FFF;
+}
+
+.paleta-00cccc{
+	background-color: #0CC;
+	color: #FFF;
+}
+
+.paleta-00eeee{
+	background-color: #0EE;
+	color: #FFF;
 }
 
 #questoes-importantes {
