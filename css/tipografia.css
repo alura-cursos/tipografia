@@ -1,55 +1,71 @@
+/* Pesos estruturais */
+
 body{
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	color: #666;
 }
+
 small{ 
 	font-size: 30%;
 	font-weight: normal;
 }
 
-.titulo-peso-1, .titulo-peso-2, .titulo-peso-3, .titulo-peso-4{
+h1, h2, h3, h4{
 	margin: .4em 0 .2em;
 }
 
-.titulo-peso-1{ 
+h1{ 
 	font-size: 1.8em;
 }
-.titulo-peso-2{
+
+h2{
 	font-size: 1.6em;
 }
-.titulo-peso-3{
+
+h3{
 	font-size: 1.4em;
 }
-.titulo-peso-4{
+
+h4{
 	font-size: 1.2em;
 }
-p, pre, li{
+
+p, .codigo, .passos li{
 	margin: 0 0 1em;
 	font-size: 1em;
 	line-height: 1.3em;
 }
+
 @media (min-width: 768px){
-	.titulo-peso-1{ 
+
+	h1{ 
 		font-size: 3em;
 	}
-	.titulo-peso-2{
+
+	h2{
 		font-size: 2.5em;
 	}
-	.titulo-peso-3{
+
+	h3{
 		font-size: 2em;
 	}
+
 	h4{
 		font-size: 1.3em;
 	}
-	p, pre, li{
+
+	p, .codigo, .passos li{
 		font-size: 1.2em;
 		line-height: 1.4em;
 	}
+
 	.codigo{
 		font-size: 1.1em;
 		line-height: 1.4em;
 	}
+
 }
+
 
 
 /* Introdução */
@@ -69,10 +85,12 @@ p, pre, li{
 .intro-subtitulo{ 
 	font: 100 italic 1.2em 'Droid Serif', Georgia, "Times New Roman", Serif;
 	margin-bottom: 1em;
-	font-weight:;
+	font-weight: normal;
+	
 }
 
 @media (min-width: 768px){
+
 	.intro-titulo{
 		font-size: 5em;
 		text-transform: uppercase;
@@ -81,7 +99,10 @@ p, pre, li{
 	.intro-subtitulo{
 		font-size: 2.5em;
 	}
+
 }
+
+
 
 /* Aula 1 - Conhecendo os diferentes tipos de fonte */
 
@@ -96,16 +117,18 @@ p, pre, li{
 .aula-1-espacamento-fixo{ 
 	font-family: "Courier New", Courier, monospace;
 }
+
 .aula-1-cursiva{ 
 	font-family: "Brush Script MT", cursive;
 }
+
 .aula-1-fantasia{ 
 	font-family: "Papyrus", cursive;
 }
 
+
+
 /* Aula 2 - Extensões, uso legal e instalação de fontes */
-
-
 
 @font-face{ 
 	font-family: 'Rounded_Elegance';
@@ -117,7 +140,7 @@ p, pre, li{
 			url('../fonts/Rounded_Elegance.svg#svgFontName') format('svg'); /* iOS anteriores */
 }
 
-h1, h2, h3, h4, .navbar li{ 
+h1, h2, h3, h4, .menu-itens li{ 
 	font-family: 'Rounded_Elegance', "Century Gothic", CenturyGothic, AppleGothic, "Trebuchet MS", sans-serif;
 	font-weight: normal;
 }
@@ -125,6 +148,8 @@ h1, h2, h3, h4, .navbar li{
 p, li{ 
 	font-weight: 300;
 }
+
+
 
 /* Aula 3 - Composições: alinhamento e combinações de fontes */
 
@@ -158,6 +183,7 @@ p, li{
 }
 
 
+
 /* Aula 4 - Estilos aplicáveis com CSS3 */
 
 #estilos{ 
@@ -181,7 +207,7 @@ a:hover{
 	color: #0EE;
 }
 
-pre{
+.codigo{
 	color: #0CC;
 }
 
@@ -197,10 +223,13 @@ pre{
 }
 
 @media (min-width: 768px){
+
 	.capitular:first-letter{
 		font-size: 2.1em;
 	}
+
 }
+
 .capitular-inverso:first-letter{
 	background-color: #FFF;
 	float: left;
@@ -213,10 +242,14 @@ pre{
 }
 
 @media (min-width: 768px){
+
 	.capitular-inverso:first-letter{
 		font-size: 2.1em;
 	}
+
 }
+
+
 
 /* Aula 5 - Questões importantes: erros comuns e as fontes nos meios digitais */
 

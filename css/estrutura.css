@@ -1,3 +1,5 @@
+/* HTML, Body e tudo */
+
 body {
     width: 100%;
     height: 100%;
@@ -13,6 +15,8 @@ html {
 *{
 	box-sizing: border-box;
 }
+
+
 
 /* Boxes estruturais */
 
@@ -63,6 +67,38 @@ html {
 	border-radius: 15px;
 }
 
+@media (min-width: 768px){
+
+	.container {
+	    width: 750px;
+	}
+
+}
+
+@media (min-width: 992px){
+
+	.container {
+	    width: 970px;
+	}
+	
+	.box-meio{
+		width: 49.5%;
+	}
+
+	.box-terco{
+		width: 32.75%;
+	}
+
+}
+
+@media (min-width: 1200px){
+	.container {
+	    width: 1170px;
+	}
+}
+
+
+
 /* Barra de navegação */
 
 .navbar {
@@ -75,27 +111,124 @@ html {
 .marca{
 	float: left;
     height: 50px;
+    margin-left: 30px;
 }
 
-.navbar ul li {
+.menu-itens li {
 	line-height: 1em;
 	margin: 0;
 	font-size: 0.7em;
 }
 
-.navbar ul li a{
+.menu-itens li a{
 	color: #FFF;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-.navbar ul li a:hover, .navbar ul li a.active {
+.menu-itens li a:hover{
 	background-color: #C00;
 	color: #FFF;
 	text-decoration: none;
 }
 
+.menu-itens li a.active {
+	background: #066;
+	color: #FFF;
+	text-decoration: none;
+}
+
+@media (min-width: 768px){
+
+	.btn-menu {
+		display:none;
+	}
+
+	.menu-itens {
+		float: right;
+		margin-right: 30px;
+	}
+
+	.menu-itens li{
+		display: inline-block;
+	}
+	
+	.menu-itens li a{
+		padding: .7em;
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
+
+}
+
+@media(max-width: 767px) {
+
+	.btn-menu {
+		float:right;
+		margin-right: 30px;
+		color: #fff;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		width: 50px;
+		height: 50px;
+		padding-top: 1.4em;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: .7em;
+	}
+
+	.btn-menu:hover {
+		color: #fff;
+	}
+
+	.btn-menu:target + .menu-itens {
+		display: block;
+	}
+
+	.menu-itens {
+		display:none;
+		margin-top: 75px;
+		text-align: right;
+		padding: 0;
+    	list-style-type: none;
+	}
+
+	.menu-itens li {
+		font-size: .7em;
+		list-style: none;
+		padding: 0;
+	}
+
+	.menu-itens li a{
+		width: 100%;
+		padding: 10px 35px;
+		display: block;
+	}
+
+	.menu-itens li a.active {
+		background: -moz-linear-gradient(left,  rgba(0,102,102,0) 0%, rgba(0,102,102,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  rgba(0,102,102,0) 0%,rgba(0,102,102,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  rgba(0,102,102,0) 0%,rgba(0,102,102,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00006666', endColorstr='#006666',GradientType=1 ); /* IE6-9 */
+	}
+
+}
+
+
+
 /* Demais elementos */
+
+.logo-alura{
+	height: 20px;
+}
+
+@media (min-width: 768px){
+
+	.logo-alura{
+		height: 50px;
+	}
+
+}
 
 .botao:hover {
 	background-color: #E00;
@@ -120,12 +253,20 @@ html {
 	display: inline-block;
 }
 
-.codigo{
+.codigo {
+	border: 2px dashed #0CC;
+	border-radius: 15px;
+	padding: 30px;
+}
+
+.codigo code{
+	tab-size: 4;
 	white-space: pre-wrap;       /* css-3 */
 	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
 	white-space: -pre-wrap;      /* Opera 4-6 */
 	white-space: -o-pre-wrap;    /* Opera 7 */
 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	padding: 30px;
 }
 
 .imagem-com-legenda {
@@ -162,11 +303,13 @@ html {
     float: left;
 }
 
+
+
 /* Introdução */
 
 #introducao {
 	height: 100%;
-	padding-top: 50%;
+	padding-top: 40%;
 	background-image: url(../img/fundo-header.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -175,6 +318,16 @@ html {
     -moz-background-size: cover;
     background-size: cover;
 }
+
+@media (min-width: 768px){
+
+	#introducao {
+		padding-top: 15%;
+	}
+
+}
+
+
 
 /* Tipos */
 
@@ -197,6 +350,14 @@ html {
 	line-height: 100%;
 	overflow: auto;
 	height: 40px;
+}
+
+@media (min-width: 768px){
+
+	.icone-sistema{
+		height: 50px;
+	}
+
 }
 
 .info-browser {
@@ -250,6 +411,8 @@ html {
 
 }
 
+
+
 /* Composições */
 
 #composicoes {
@@ -258,6 +421,8 @@ html {
     background: #F1F1F1;
 }
 
+
+
 /* Estilos */
 
 #estilos {
@@ -265,6 +430,7 @@ html {
     padding: 100px 0;
     background: #FFF;
 }
+
 .paleta{
 	list-style-type: none;
 	padding: 0;
@@ -275,7 +441,9 @@ html {
 	padding: .5em;
 	margin: .25em;
 	border-radius: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,0.25);
+	box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,0.25);
 }
 
 .paleta-000000{
@@ -321,88 +489,13 @@ html {
 	color: #FFF;
 }
 
+
+
+/* Questões importantes */
+
 #questoes-importantes {
 	overflow: auto;
     padding: 100px 0;
     background: #F1F1F1;
 }
 
-
-@media(max-width: 773px) {
-	.menu-itens {
-		display:none;
-		margin-top:75px;
-
-	}
-	.menu-itens li {
-		padding-right:50px;
-		line-height: 2em;
-		font-size: 1em;
-		list-style:none;
-		text-align: right;
-	}
-	.btn-menu {
-		float:right;
-		margin-right:50px;
-		color:#fff;
-		border:1px solid #fff;
-		border-radius: 5px;
-		padding: 10px;
-		cursor:pointer;
-	}
-	.btn-menu:hover {
-		color:#fff;
-	}
-	.btn-menu:target + .menu-itens {
-		display:block;
-	}
-}
-@media (min-width: 768px){
-	.btn-menu {
-		display:none;
-	}
-	.container {
-	    width: 750px;
-	}
-	#introducao {
-		padding-top: 15%;
-	}
-
-	.icone-sistema{
-		height: 50px;
-	}
-
-	.navbar ul{
-		float: right;
-	}
-
-	.navbar ul li{
-		display: inline-block;
-	}
-	.navbar ul li a{
-		padding: .7em;
-		box-sizing: border-box;
-		border-radius: 5px;
-	}
-}
-
-@media (min-width: 992px){
-	.container {
-	    width: 970px;
-	}
-	
-	.box-meio{
-		width: 49.5%;
-	}
-
-	.box-terco{
-		width: 32.75%;
-	}
-
-}
-
-@media (min-width: 1200px){
-	.container {
-	    width: 1170px;
-	}
-}
