@@ -326,7 +326,7 @@ p, li {
 						<h4>Posso utilizar duas fontes do mesmo tipo?</h4>
 						<p>Pode, mas é interessante que as fontes se diferenciem em algum aspecto. Nesta página, por exemplo, combinamos duas fontes sem serifa na maioria dos blocos. Nos títulos utlizamos a fonte <a href="http://www.dafont.com/pt/rounded-elegance.font" target="_blank">Rounded Elegance</a>, que possui letras com aspecto bem mais arredondado que a fonte que escolhemos para o <em>body</em>, <a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a>, que possui as características tradicionais de uma letra de forma. Podemos notar isso bem ao vermos a diferença que há entre as duas fontes por meio da letra "a" minúscula.</p>
 						<h4>E outros estilos de fonte, posso utilizar na combinação?</h4>
-						<p>Como vimos lá no começo, fontes de espaçamento fixo, cursivas e fantasias podem comprometer a legibilidade, por isso não são recomendadas para grandes blocos de texto, como parágrafos. Porém, elas podem fazer parte do layout como elementos de destaque.</p>
+						<p>Como vimos lá no começo, fontes de espaçamento fixo, cursivas e fantasias podem comprometer a legibilidade, por isso não são recomendadas para grandes blocos de texto, como parágrafos. Porém, elas podem fazer parte do layout estilizando elementos específicos como títulos e destaques.</p>
 					</div>
 				</div>
 				<div class="container exemplo">
@@ -348,7 +348,7 @@ p, li {
 						<h3 class="aula-3-titulo-sem-serifa">Título sem serifa</h3>
 						<p class="aula-3-paragrafo-slab">Parágrafo de fonte Slab. Como exemplo, a <a href="http://revistaautoesporte.globo.com/" target="_blank">Revista Auto Esporte</a> utiliza fonte slab em seus parágrafos e, nos títulos, utiliza uma fonte sem serifa com todas as letras maíusculas – uma combinação que funciona bem. As fontes de serifa slab possuem uma forma que remete à máquina de escrever e podem produzir blocos de texto de aspecto elegante e moderno.</p>
 					</div>
-					<div class="box-terco aula-3-destaque-slab">
+					<div class="box-terco destaque">
 						<p>Fontes Slab são fontes de origem egípcia com serifas quadradas. O veículo de informação <a href="http://www.carosamigos.com.br/" target="_blank">Caros Amigos</a>, por exemplo, utiliza esse tipo de fonte nos títulos de seu portal. Uma fonte de apoio pode ser definida em seu layout para ser usada em elementos de destaque.</p>
 					</div>
 					<div class="box-inteiro">
@@ -377,6 +377,52 @@ p, li {
 						<li class="paleta-00cccc">#00CCCC</li>
 						<li class="paleta-00eeee">#00EEEE</li>
 					</ul>
+					<p>Alguns elementos estruturais já possuem as cores aplicadas, pois nosso objetivo aqui é focar na tipografia. Nos planos de fundo, ou temos a cor branca, ou um cinza bem clarinho, apenas para diferenciar uma seção da outra. Também já temos os estilos "inverso", que utiliza cinza escuro no fundo e branco no texto, e "destaque", que utiliza o tom de turquesa mais escuro no plano de fundo e também branco no texto.</p>
+					<p>Vamos editar o arquivo <b>tipografia.css</b>.</p>
+					<p>Como vimos nos princípios para uma tipografia de boa legibilidade, muito contraste pode tornar a leitura cansativa. Vamos reduzir esse contraste atribuindo a cor #666666 para todo o texto da página, que deverá substituir a cor preta, que é padrão quando não definimos a cor do texto. Então definimos o <em>body</em> ficará assim:</p>
+					<blockquote>
+						<pre>
+body{
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	color: #666;
+}
+						</pre>
+					</blockquote>
+					<p>A diminuição do contraste tornou nossa página menos densa e a leitura mais agradável.</p>
+					<p>Temos muitos links nos blocos de texto. Por padrão, o navegador deixa os links azuis e sublinhados. É importante destacar de alguma maneira os links, para que o usuário saiba que é um elemento clicável, mas podemos criar um estilo mais interessante que o padrão do navegador. Como já temos botões vermelhos, podemos também estilizar os links com essa cor e remeter a ideia de um elemento clicável, então definimos seguinte para os links:</p>
+					<blockquote>
+						<pre>
+a{
+	color: #C00;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #E00;
+	text-decoration: underline;
+}
+						</pre>
+					</blockquote>
+					<p>Agora todos os links da página possuem a cor #CC0000 e, quando há sobreposição do cursor do mouse, os links passam a ter a cor #EE0000 e recebem sublinhado. Esse estilo ficou interessante para quase toda a página, porém nos blocos <em>"inverso"</em> e <em>"destaque"</em> essa cor de link não funciona bem, pois esses blocos possuem uma relação de cor inversa: fundo escuro e texto claro. Então vamos definir cores turquesa para os links desses elementos:</p>
+					<blockquote>
+						<pre>
+.inverso a, .destaque a{
+	color: #0CC;
+}
+
+.inverso a:hover, .destaque a:hover{
+	color: #0EE;
+}
+						</pre>
+					</blockquote>
+					<p>Nossa página também possui blocos de texto HTML e CSS com conteúdo das atividades e são definidos pela tag <b>pre</b>. Os textos pré-formatados, por padrão do navegador, já vêm com uma fonte de espaçamento fixo e isso já ajuda a lembrar que se trata de um código. Para tornar nosso layout mais interessante e diferenciar os elementos, podemos destacar os <b>pre</b> com uma cor. Então definimos o seguinte:</p>
+					<blockquote>
+						<pre>
+pre{
+	color: #0CC;
+}
+						</pre>
+					</blockquote>
 				</div>
 				<div class="box-inteiro">
 					<h3>Como produzir uma capitular?</h3>

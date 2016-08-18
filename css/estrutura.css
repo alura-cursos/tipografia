@@ -48,14 +48,11 @@ html {
 	background-color: #666;
 	border-radius: 15px;
 }
-.inverso a{
-	color: #0CC;
-	text-decoration: none;
-}
 
-.inverso a:hover{
-	color: #0EE;
-	text-decoration: underline;
+.destaque{
+	color: #FFF;
+	background-color: #066;
+	border-radius: 15px;
 }
 
 nav {
@@ -70,8 +67,12 @@ nav {
     height: 50px;
 }
 
-nav ul li a {
-	box-sizing: border-box;
+pre{
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 figure {
@@ -201,12 +202,6 @@ ol li::before {
 	border: 2px solid #066;
 	border-radius: 15px;
 	background-color: #FFF;
-}
-
-.aula-3-destaque-slab{
-	background-color: #066;
-	border-radius: 15px;
-	color: #FFF;
 }
 
 #estilos {

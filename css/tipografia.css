@@ -7,16 +7,6 @@ small {
 	font-weight: normal;
 }
 
-a{
-	color: #C00;
-	text-decoration: none;
-}
-
-a:hover{
-	color: #E00;
-	text-decoration: underline;
-}
-
 .botao {
 	font-size: 1.2em;
 	line-height: 1em;
@@ -61,14 +51,6 @@ p, pre, li{
 	margin: 0 0 1em;
 	font-size: 1em;
 	line-height: 1.3em;
-}
-pre{
-	color: #699;
-	white-space: pre-wrap;       /* css-3 */
-	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-	white-space: -pre-wrap;      /* Opera 4-6 */
-	white-space: -o-pre-wrap;    /* Opera 7 */
-	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 @media (min-width: 768px){
 	h1{
@@ -192,27 +174,43 @@ p, li {
 	font-weight: 300;
 }
 
-.aula-3-destaque-slab{
+.destaque{
 	text-align: center;
 	font-family: 'Roboto Slab', Serif;
 }
 
-.aula-3-destaque-slab p{
+.destaque p{
 	font-variant: normal;
 	font-weight: 700;
 	font-size: 1.55em;
 }
 
-.aula-3-destaque-slab a{
-	color: #0CC;
-}
 
-.aula-3-destaque-slab a:hover{
-	color: #0FF;
-}
 /* Aula 4 - Estilos aplicáveis com CSS3 */
 
 #estilos {
+}
+
+a{
+	color: #C00;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #E00;
+	text-decoration: underline;
+}
+
+.inverso a, .destaque a{
+	color: #0CC;
+}
+
+.inverso a:hover, .destaque a:hover{
+	color: #0EE;
+}
+
+pre{
+	color: #0CC;
 }
 
 .capitular:first-letter{
