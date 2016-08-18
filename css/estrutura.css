@@ -14,6 +14,8 @@ html {
 	box-sizing: border-box;
 }
 
+/* Boxes estruturais */
+
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -49,13 +51,21 @@ html {
 	border-radius: 15px;
 }
 
+.exemplo {
+	border: 2px solid #066;
+	border-radius: 15px;
+	background-color: #FFF;
+}
+
 .destaque{
 	color: #FFF;
 	background-color: #066;
 	border-radius: 15px;
 }
 
-nav {
+/* Barra de navegação */
+
+.navbar {
 	width: 100%;
 	background-color: #000;
 	padding: 20px 0;
@@ -67,19 +77,40 @@ nav {
     height: 50px;
 }
 
-pre{
-	white-space: pre-wrap;       /* css-3 */
-	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-	white-space: -pre-wrap;      /* Opera 4-6 */
-	white-space: -o-pre-wrap;    /* Opera 7 */
-	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+.navbar ul li {
+	line-height: 1em;
+	margin: 0;
+	font-size: 0.7em;
 }
 
-figure {
-	margin: 1em 0;
+.navbar ul li a{
+	color: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+	background-color: #C00;
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* Demais elementos */
+
+.botao:hover {
+	background-color: #E00;
+	color: #FFF;
+	text-decoration: none;
 }
 
 .botao {
+	font-size: 1.2em;
+	line-height: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: .1em;
 	text-align: center;
 	background-color: #C00;
 	border: none;
@@ -88,22 +119,37 @@ figure {
 	color: #FFF;
 	display: inline-block;
 }
-.botao:hover {
-	background-color: #E00;
-	color: #FFF;
-	text-decoration: none;
+
+.codigo{
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-ol {
+.imagem-com-legenda {
+	margin: 1em 0;
+}
+
+.imagem-com-legenda figcaption{
+	font-size: 0.8em;
+	font-style: italic;
+	line-height: 1em;
+}
+
+.passos {
     margin-left: 0;
     padding-right: 0;
     list-style-type: none;
 }
-ol li {
+
+.passos li {
     counter-increment: step-counter;
     margin-bottom: 1em;
 }
-ol li::before {
+
+.passos li::before {
     content: counter(step-counter);
     margin: -3px 5px 0 -40px;
     margin-left: -40px;
@@ -112,9 +158,11 @@ ol li::before {
     color: #FFF;
     border-radius: 50%;
     font-weight: bold;
-    padding: .2em .5em;
+    padding: .2em .55em;
     float: left;
 }
+
+/* Introdução */
 
 #introducao {
 	height: 100%;
@@ -128,6 +176,8 @@ ol li::before {
     background-size: cover;
 }
 
+/* Tipos */
+
 #tipos {
 	overflow: auto;
     padding: 100px 0;
@@ -139,12 +189,23 @@ ol li::before {
     padding: 100px 0;
     background: #FFF;
 }
+
+.icone-sistema{
+	display: inline;
+	float: left;
+	margin-right: .5em;
+	line-height: 100%;
+	overflow: auto;
+	height: 40px;
+}
+
 .info-browser {
 	width: 100%;
 	font-size: 0.5em;
 	border-spacing: .2em;
     border-collapse: separate;
 }
+
 .info-browser td {
     border: none;
     white-space: 0;
@@ -152,12 +213,14 @@ ol li::before {
     padding: .6em;
     vertical-align: top;
 }
+
 .info-browser th {
     background-color: #666;
     color: #FFF;
     font-weight: normal;
     padding: .6em;
 }
+
 .info-browser caption{
 	caption-side: bottom;
 	text-align: left;
@@ -169,11 +232,14 @@ ol li::before {
 .info-browser tr:nth-child(even) {
     background-color: #F1F1F1;
 }
+
 @media (min-width: 768px){
+
 	.info-browser {
 		font-size: 1em;
 		border-spacing: .1em;
 	}
+
 	.info-browser caption{
 		caption-side: bottom;
 		text-align: left;
@@ -181,16 +247,10 @@ ol li::before {
 		line-height: 1.2em;
 		margin-top: .2em;
 	}
+
 }
 
-.icone-sistema{
-	display: inline;
-	float: left;
-	margin-right: .5em;
-	line-height: 100%;
-	overflow: auto;
-	height: 40px;
-}
+/* Composições */
 
 #composicoes {
 	overflow: auto;
@@ -198,11 +258,7 @@ ol li::before {
     background: #F1F1F1;
 }
 
-.exemplo {
-	border: 2px solid #066;
-	border-radius: 15px;
-	background-color: #FFF;
-}
+/* Estilos */
 
 #estilos {
 	overflow: auto;
@@ -316,14 +372,14 @@ ol li::before {
 		height: 50px;
 	}
 
-	nav ul{
+	.navbar ul{
 		float: right;
 	}
 
-	nav ul li{
+	.navbar ul li{
 		display: inline-block;
 	}
-	nav ul li a{
+	.navbar ul li a{
 		padding: .7em;
 		box-sizing: border-box;
 		border-radius: 5px;

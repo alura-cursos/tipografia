@@ -2,49 +2,25 @@ body{
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	color: #666;
 }
-small {
+small{ 
 	font-size: 30%;
 	font-weight: normal;
 }
 
-.botao {
-	font-size: 1.2em;
-	line-height: 1em;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-decoration: none;
-	text-align: center;
-}
-nav ul li {
-	line-height: 1em;
-	margin: 0;
-	font-size: 0.7em;
-}
-nav ul li a{
-	color: #FFF;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-nav ul li a:hover, nav ul li a.active {
-	background-color: #C00;
-	color: #FFF;
-	text-decoration: none;
-}
-h1, h2, h3, h4{
+.titulo-peso-1, .titulo-peso-2, .titulo-peso-3, .titulo-peso-4{
 	margin: .4em 0 .2em;
 }
 
-
-h1{
+.titulo-peso-1{ 
 	font-size: 1.8em;
 }
-h2{
+.titulo-peso-2{
 	font-size: 1.6em;
 }
-h3{
+.titulo-peso-3{
 	font-size: 1.4em;
 }
-h4{
+.titulo-peso-4{
 	font-size: 1.2em;
 }
 p, pre, li{
@@ -53,13 +29,13 @@ p, pre, li{
 	line-height: 1.3em;
 }
 @media (min-width: 768px){
-	h1{
+	.titulo-peso-1{ 
 		font-size: 3em;
 	}
-	h2{
+	.titulo-peso-2{
 		font-size: 2.5em;
 	}
-	h3{
+	.titulo-peso-3{
 		font-size: 2em;
 	}
 	h4{
@@ -69,32 +45,28 @@ p, pre, li{
 		font-size: 1.2em;
 		line-height: 1.4em;
 	}
-	pre{
+	.codigo{
 		font-size: 1.1em;
 		line-height: 1.4em;
 	}
 }
-figcaption{
-	font-size: 0.8em;
-	font-style: italic;
-	line-height: 1em;
-}
+
 
 /* Introdução */
 
-#introducao {
+#introducao{ 
 	color: #FFF;
 	text-align: center;
 }
 
-.intro-titulo{
+.intro-titulo{ 
 	font: 900 2.5em;
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: .2em;
 }
 
-.intro-subtitulo{
+.intro-subtitulo{ 
 	font: 100 italic 1.2em 'Droid Serif', Georgia, "Times New Roman", Serif;
 	margin-bottom: 1em;
 	font-weight:;
@@ -113,21 +85,21 @@ figcaption{
 
 /* Aula 1 - Conhecendo os diferentes tipos de fonte */
 
-.aula-1-serifa {
+.aula-1-serifa{ 
 	font-family: "Times New Roman", Georgia, Serif;
 }
 
-.aula-1-sem-serifa {
+.aula-1-sem-serifa{ 
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-.aula-1-espacamento-fixo {
+.aula-1-espacamento-fixo{ 
 	font-family: "Courier New", Courier, monospace;
 }
-.aula-1-cursiva {
+.aula-1-cursiva{ 
 	font-family: "Brush Script MT", cursive;
 }
-.aula-1-fantasia {
+.aula-1-fantasia{ 
 	font-family: "Papyrus", cursive;
 }
 
@@ -135,7 +107,7 @@ figcaption{
 
 
 
-@font-face {
+@font-face{ 
 	font-family: 'Rounded_Elegance';
 		src: url('../fonts/Rounded_Elegance.eot'); /* Modo compatível com IE 9 */
 		src: url('../fonts/Rounded_Elegance.eot?#iefix') format('embedded-opentype'), /* IE6 e IE8 */
@@ -145,18 +117,18 @@ figcaption{
 			url('../fonts/Rounded_Elegance.svg#svgFontName') format('svg'); /* iOS anteriores */
 }
 
-h1, h2, h3, h4, nav li {
+h1, h2, h3, h4, .navbar li{ 
 	font-family: 'Rounded_Elegance', "Century Gothic", CenturyGothic, AppleGothic, "Trebuchet MS", sans-serif;
 	font-weight: normal;
 }
 
-p, li {
+p, li{ 
 	font-weight: 300;
 }
 
 /* Aula 3 - Composições: alinhamento e combinações de fontes */
 
-#composicoes {
+#composicoes{ 
 }
 
 .aula-3-titulo-serifa{
@@ -188,7 +160,7 @@ p, li {
 
 /* Aula 4 - Estilos aplicáveis com CSS3 */
 
-#estilos {
+#estilos{ 
 }
 
 a{
@@ -248,5 +220,5 @@ pre{
 
 /* Aula 5 - Questões importantes: erros comuns e as fontes nos meios digitais */
 
-#questoes-importantes {
+#questoes-importantes{ 
 }
