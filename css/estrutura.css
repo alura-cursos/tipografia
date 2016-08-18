@@ -272,7 +272,39 @@ ol li::before {
 }
 
 
+@media(max-width: 773px) {
+	.menu-itens {
+		display:none;
+		margin-top:75px;
+
+	}
+	.menu-itens li {
+		padding-right:50px;
+		line-height: 2em;
+		font-size: 1em;
+		list-style:none;
+		text-align: right;
+	}
+	.btn-menu {
+		float:right;
+		margin-right:50px;
+		color:#fff;
+		border:1px solid #fff;
+		border-radius: 5px;
+		padding: 10px;
+		cursor:pointer;
+	}
+	.btn-menu:hover {
+		color:#fff;
+	}
+	.btn-menu:target + .menu-itens {
+		display:block;
+	}
+}
 @media (min-width: 768px){
+	.btn-menu {
+		display:none;
+	}
 	.container {
 	    width: 750px;
 	}

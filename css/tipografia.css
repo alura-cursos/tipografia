@@ -25,7 +25,7 @@ nav ul li a{
 	text-decoration: none;
 	text-transform: uppercase;
 }
-nav ul li a:hover{
+nav ul li a:hover, nav ul li a.active {
 	background-color: #C00;
 	color: #FFF;
 	text-decoration: none;
