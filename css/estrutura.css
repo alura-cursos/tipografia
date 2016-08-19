@@ -181,7 +181,7 @@ html {
 		color: #fff;
 	}
 
-	.btn-menu:target + .menu-itens {
+	#btn-menu.menu-active + .menu-itens {
 		display: block;
 	}
 
