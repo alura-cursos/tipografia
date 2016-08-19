@@ -80,6 +80,7 @@ p, .codigo, .passos li{
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: .2em;
+	color: #FFF;
 }
 
 .intro-subtitulo{ 
@@ -92,7 +93,20 @@ p, .codigo, .passos li{
 @media (min-width: 768px){
 
 	.intro-titulo{
-		font-size: 5em;
+		font-size: 3em;
+		text-transform: uppercase;
+	}
+
+	.intro-subtitulo{
+		font-size: 1.5em;
+	}
+
+}
+
+@media (min-width: 992px){
+
+	.intro-titulo{
+		font-size: 4em;
 		text-transform: uppercase;
 	}
 
@@ -101,7 +115,6 @@ p, .codigo, .passos li{
 	}
 
 }
-
 
 
 /* Aula 1 - Conhecendo os diferentes tipos de fonte */
@@ -211,12 +224,20 @@ a:hover{
 	color: #0CC;
 }
 
+.titulo-de-capitulo{
+	padding: 10px 0 10px 10px;
+	margin-left: -20px;
+	color: #000;
+	border-bottom: 2px dotted #0CC;
+	border-left: 10px solid #0CC;
+}
+
 .capitular:first-letter{
 	background-color: #666;
 	float: left;
 	color: #FFF;
-	font-size: 1.8em;
-	line-height: 1.2em;
+	font-size: 2em;
+	line-height: 1.25em;
 	padding: 0 .2em;
 	border-radius: 5px;
 	margin-right: .1em;
@@ -235,7 +256,7 @@ a:hover{
 	float: left;
 	color: #666;
 	font-size: 1.8em;
-	line-height: 1.2em;
+	line-height: 1.25em;
 	padding: 0 .2em;
 	border-radius: 5px;
 	margin-right: .1em;
@@ -254,4 +275,15 @@ a:hover{
 /* Aula 5 - Questões importantes: erros comuns e as fontes nos meios digitais */
 
 #questoes-importantes{ 
+}
+
+.bibliografia {
+	list-style-type: none;
+	font-style: italic;
+	padding: 0;
+}
+.bibliografia li {
+	list-style-type: none;
+	font-style: italic;
+	margin-bottom: .5em;
 }

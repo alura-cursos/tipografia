@@ -38,7 +38,7 @@
 		<section id="tipos">
 			<div class="container">
 				<div class="box-inteiro">
-					<h1>Conhecendo os diferentes tipos de fonte</h1>
+					<h1 class="titulo-de-capitulo">Conhecendo os diferentes tipos de fonte</h1>
 				</div>
 				<div class="box-meio">
 					<figure class="imagem-com-legenda">
@@ -89,7 +89,7 @@
 		<section id="extensoes">
 			<div class="container">
 				<div class="box-inteiro">
-					<h1>Uso legal, instalação e extensões de fontes</h1>
+					<h1 class="titulo-de-capitulo">Uso legal, instalação e extensões de fontes</h1>
 				</div>
 				<div class="box-meio inverso">
 					<h4>TrueType</h4>
@@ -313,7 +313,7 @@ p, li {
 			<div class="container">
 				<div class="container">
 					<div class="box-inteiro">
-						<h1>Composições: combinações e distribuição de fontes no layout</h1>
+						<h1 class="titulo-de-capitulo">Composições: combinações e distribuição de fontes no layout</h1>
 					</div>
 					<div class="box-inteiro">
 						<h2>Princípios para uma tipografia de boa legibilidade</h2>
@@ -376,7 +376,7 @@ p, li {
 		<section id="estilos">
 			<div class="container">
 				<div class="box-inteiro">   
-					<h1>Estilos aplicáveis com CSS3</h1>
+					<h1 class="titulo-de-capitulo">Estilos aplicáveis com CSS3</h1>
 				</div>
 				<div class="box-inteiro">
 					<h3>Distribuindo cores para os elementos tipográficos</h3>
@@ -436,7 +436,7 @@ a:hover{
 							</code>
 						</pre>
 					</blockquote>
-					<p>Nossa página também possui blocos de texto HTML e CSS com conteúdo das atividades e são definidos pela tag <b>pre</b>. Os textos pré-formatados, por padrão do navegador, já vêm com uma fonte de espaçamento fixo e isso já ajuda a lembrar que se trata de um código. Para tornar nosso layout mais interessante e diferenciar os elementos, podemos destacar os <b>pre</b> com uma cor. Então definimos o seguinte:</p>
+					<p>Nossa página também possui blocos de texto HTML e CSS ( blockquote > pre > code ) com o conteúdo das atividades e são definidos pela classe <b>codigo</b>. Os textos pré-formatados, por padrão do navegador, já vêm com uma fonte de espaçamento fixo e isso já ajuda a lembrar que se trata de um código. Para tornar nosso layout mais interessante e diferenciar os elementos, podemos destacar essas classes <b>codigo</b> com uma cor. Então definimos o seguinte:</p>
 					<blockquote class="codigo">
 						<pre>
 							<code>
@@ -446,9 +446,76 @@ a:hover{
 							</code>
 						</pre>
 					</blockquote>
+					<p>Agora nossa página possui um elemento destacado por cor. Isso torna a página mais agradável e também traz ritmo para o conteúdo, uma vez que a cor também é uma característica que diferencia os elementos. Vamos destacar também os títulos <b>"h1"</b> desta página afim de definir melhor as aberturas de capítulo. Se quiséssemos que o texto fosse sublinhado, deveríamos colocar o atributo <em>text-decoration: underline</em>, mas quero apenas decorar os títulos de peso 1 com uma borda abaixo e uma borda ao lado, além de atribuir a cor preta à fonte e proporcionar maior destaque. Para isso já temos uma classe atribuida a esses títulos — <b>titulo-peso-1</b>:</p>
+					<blockquote class="codigo">
+						<pre>
+							<code>
+.titulo-de-capitulo{
+	padding: 10px 0 10px 10px;
+	margin-left: -20px;
+	color: #000;
+	border-bottom: 2px dotted #0CC;
+	border-left: 10px solid #0CC;
+}
+							</code>
+						</pre>
+					</blockquote>
+					<p>Com isso já estilizamos boa parte do texto de nossa página. Vejamos a seguir como estilizar alguns elementos tipográficos.</p>
 				</div>
 				<div class="box-inteiro">
 					<h3>Como produzir uma capitular?</h3>
+					<p>Letra capitular é um estilo tipográfico que podemos utilizar para destacar parágrafos de maior importância. Esse recurso é utilizado em livros, revistas e também pode ser produzido com CSS. Para destacar uma capitular, podemos apenas tornar a primeira letra maior que as outras, como podemos atribuir características específicas a ela, como fundo, contorno e outros estilos. Nesta página, diversos parágrafos receberam a classe <b>capitular</b>. Vamos inserir os estilos no arquivo <b>tipografia.css</b> e ver o que acontece com esses parágrafos:</p>
+					<blockquote class="codigo">
+						<pre>
+							<code>
+.capitular:first-letter{
+	background-color: #666;
+	float: left;
+	color: #FFF;
+	font-size: 2em;
+	line-height: 1.25em;
+	padding: 0 .2em;
+	border-radius: 5px;
+	margin-right: .1em;
+}
+
+@media (min-width: 768px){
+
+	.capitular:first-letter{
+		font-size: 2.1em;
+	}
+
+}
+							</code>
+						</pre>
+					</blockquote>
+					<p>Como podemos ver, estamos selecionando a primeira letra do parágrafo por meio do pseudo-elemento <b>first-letter</b>. Agora temos diversos parágrafos com capitular.</p>
+					<p>Alguns boxes "inverso" também possuem capitular. Para isso já temos a classe <b>capitular-inverso</b> atribuida a alguns parágrafos desses boxes. Para estilizarmos, só que com as cores inversas, adicionaremos o seguinte:</p>
+					<blockquote class="codigo">
+						<pre>
+							<code>
+.capitular-inverso:first-letter{
+	background-color: #FFF;
+	float: left;
+	color: #666;
+	font-size: 1.8em;
+	line-height: 1.25em;
+	padding: 0 .2em;
+	border-radius: 5px;
+	margin-right: .1em;
+}
+
+@media (min-width: 768px){
+
+	.capitular-inverso:first-letter{
+		font-size: 2.1em;
+	}
+
+}
+							</code>
+						</pre>
+					</blockquote>
+					<p>Com isso já temos diversos parágrafos de maior importância destacados por esse elemento tipográfico.</p>
 				</div>
 				<div class="box-inteiro">
 					<h3>Como estilizar uma citação</h3>
@@ -461,16 +528,30 @@ a:hover{
 		<section id="questoes-importantes">
 			<div class="container">
 				<div class="box-inteiro">
-					<h1>Questões importantes</h1>
-				</div>
-				<div class="box-inteiro">
-					<h2>As fontes nos meios digitais</h2>
+					<h1 class="titulo-de-capitulo">Questões importantes</h1>
 				</div>
 				<div class="box-inteiro">
 					<h2>Erros comuns</h2>
 				</div>
+				<div class="box-terco">
+					<h3>Caminhos de rato</h3>
+				</div>
+				<div class="box-terco">
+					<h3>Órfãs, viuvas e trancas</h3>
+				</div>
+				<div class="box-terco">
+					<h3>Efeito pérola</h3>
+				</div>
+				<div class="box-inteiro">
+					<h2>Anti-aliasing</h2>
+				</div>
 				<div class="box-inteiro">
 					<h2>Bibliografia</h2>
+					<ul class="bibliografia">
+						<li>The Elements of Typographic Style Applied to the Web – Richard Rutter</li>
+						<li>Typography: Getting the Hang of Web Typography — Smashing Magazine</li>
+						<li></li>
+					</ul>
 				</div>
 			</div>
 		</section>

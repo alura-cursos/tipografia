@@ -225,6 +225,14 @@ html {
 @media (min-width: 768px){
 
 	.logo-alura{
+		height: 35px;
+	}
+
+}
+
+@media (min-width: 992px){
+
+	.logo-alura{
 		height: 50px;
 	}
 
@@ -254,9 +262,9 @@ html {
 }
 
 .codigo {
-	border: 2px dashed #0CC;
+	border: 1px dashed #666;
 	border-radius: 15px;
-	padding: 30px;
+	padding: 0 30px;
 }
 
 .codigo code{
@@ -266,7 +274,12 @@ html {
 	white-space: -pre-wrap;      /* Opera 4-6 */
 	white-space: -o-pre-wrap;    /* Opera 7 */
 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
-	padding: 30px;
+}
+
+.codigo pre{
+	   white-space: pre;
+	   margin: 0;
+	   padding: 0;
 }
 
 .imagem-com-legenda {
@@ -309,7 +322,9 @@ html {
 
 #introducao {
 	height: 100%;
-	padding-top: 40%;
+	height: 100vh;
+	padding-top: 36%;
+	padding-top: 20vh;
 	background-image: url(../img/fundo-header.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -441,52 +456,58 @@ html {
 	padding: .5em;
 	margin: .25em;
 	border-radius: 10px;
-	-webkit-box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,0.25);
-	-moz-box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,0.25);
-	box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,0.25);
 }
 
 .paleta-000000{
 	background-color: #000;
 	color: #FFF;
+	border: 1px dashed #FFF;
 }
 
 .paleta-666666{
 	background-color: #666;
 	color: #FFF;
+	border: 1px dashed #FFF;
 }
 
 .paleta-f1f1f1{
 	background-color: #F1F1F1;
+	border: 1px dashed #666;
 }
 
 .paleta-ffffff{
 	background-color: #FFF;
+	border: 1px dashed #666;
 }
 
 .paleta-cc0000{
 	background-color: #C00;
 	color: #FFF;
+	border: 1px dashed #FFF;
 }
 
 .paleta-ee0000{
 	background-color: #E00;
 	color: #FFF;
+	border: 1px dashed #FFF;
 }
 
 .paleta-006666{
 	background-color: #066;
 	color: #FFF;
+	border: 1px dashed #FFF;
 }
 
 .paleta-00cccc{
 	background-color: #0CC;
 	color: #FFF;
+	border: 1px dashed #FFF;
 }
 
 .paleta-00eeee{
 	background-color: #0EE;
 	color: #FFF;
+	border: 1px dashed #FFF;
 }
 
 
