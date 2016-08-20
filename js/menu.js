@@ -4,6 +4,10 @@
 
 	var btnMenu = document.querySelector("#btn-menu");
 
+	var banner = document.querySelector("#introducao");
+	var menu = document.querySelector(".navbar");
+	var footer = document.querySelector("footer");
+
 	btnMenu.addEventListener("click",function (e) {
 		e.preventDefault();
 		this.classList.toggle("menu-active");
@@ -35,7 +39,7 @@
 
 			var idAtual = el.getAttribute('id');
 			var tamanhoAtual = -el.offsetHeight;
-			var relativePos = pegaPosicaoDo(el);
+			var relativePos = pegaPosicaoDo(el) - (introducao.offsetHeight + menu.offsetHeight - footer.offsetHeight);
 
 			if(relativePos <= 0 && relativePos > tamanhoAtual) {
 				menuItens[idAtual].classList.add("active");
