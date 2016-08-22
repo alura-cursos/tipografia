@@ -41,6 +41,10 @@ p{
 	line-height: 1.3em;
 }
 
+.codigo{
+	font-family: monospace;
+}
+
 @media (min-width: 768px){
 
 	h1{ 

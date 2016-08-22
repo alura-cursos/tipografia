@@ -440,6 +440,74 @@ html {
     background: #F1F1F1;
 }
 
+.info-css {
+	width: 100%;
+	font-size: 0.5em;
+	border-spacing: .2em;
+    border-collapse: separate;
+}
+
+.info-css td {
+    border: none;
+    white-space: 0;
+    text-align: center;
+    padding: .6em;
+    vertical-align: top;
+}
+
+.info-css th {
+    background-color: #666;
+    color: #FFF;
+    font-weight: normal;
+    padding: .6em;
+}
+
+.info-css caption{
+	caption-side: bottom;
+	text-align: left;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin-top: .2em;
+}
+
+.info-css td:first-child, .info-css th:first-child {
+    text-align: right;
+}
+
+.info-css td:first-child {
+    font-family: monospace;
+    color: #0CC;
+}
+
+.info-css td:nth-child(2), .info-css td:nth-child(3), .info-css th:nth-child(2), .info-css th:nth-child(3) {
+	text-align: left;
+}
+
+.info-css td:nth-child(3) {
+    font-family: monospace;
+    color: #0CC;
+}
+
+.info-css tr:nth-child(even) {
+    background-color: #F1F1F1;
+}
+
+@media (min-width: 768px){
+
+	.info-css {
+		font-size: 1em;
+		border-spacing: .1em;
+	}
+
+	.info-css caption{
+		caption-side: bottom;
+		text-align: left;
+		font-size: 1em;
+		line-height: 1.2em;
+		margin-top: .2em;
+	}
+
+}
 
 
 /* Estilos */
