@@ -264,22 +264,22 @@ html {
 .codigo {
 	border: 1px dashed #666;
 	border-radius: 15px;
-	padding: 0 30px;
-}
-
-.codigo code{
+	padding: 30px;
+	margin: 0;
 	tab-size: 4;
-	white-space: pre-wrap;       /* css-3 */
-	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-	white-space: -pre-wrap;      /* Opera 4-6 */
-	white-space: -o-pre-wrap;    /* Opera 7 */
-	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-.codigo pre{
-	   white-space: pre;
-	   margin: 0;
-	   padding: 0;
+@media (min-width: 768px){
+
+	.codigo {
+		margin: 0 30px;
+	}
+
 }
 
 .imagem-com-legenda {
@@ -316,6 +316,10 @@ html {
     float: left;
 }
 
+.lista-simples{
+	margin-left: 0;
+	padding-left: 1.2em;
+}
 
 
 /* Introdução */

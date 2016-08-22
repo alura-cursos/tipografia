@@ -11,7 +11,7 @@ small{
 }
 
 h1, h2, h3, h4{
-	margin: .4em 0 .2em;
+	margin: .5em 0 1.2em;
 }
 
 h1{ 
@@ -30,8 +30,13 @@ h4{
 	font-size: 1.2em;
 }
 
-p, .codigo, .passos li{
-	margin: 0 0 1em;
+p{
+	margin-bottom: 2em;
+	font-size: 1em;
+	line-height: 1.3em;
+}
+
+.codigo, .passos li, .lista-simples li{
 	font-size: 1em;
 	line-height: 1.3em;
 }
@@ -54,7 +59,7 @@ p, .codigo, .passos li{
 		font-size: 1.3em;
 	}
 
-	p, .codigo, .passos li{
+	p, .codigo, .passos li, .lista-simples li{
 		font-size: 1.2em;
 		line-height: 1.4em;
 	}
@@ -255,7 +260,7 @@ a:hover{
 	background-color: #FFF;
 	float: left;
 	color: #666;
-	font-size: 1.8em;
+	font-size: 2em;
 	line-height: 1.25em;
 	padding: 0 .2em;
 	border-radius: 5px;
@@ -270,6 +275,61 @@ a:hover{
 
 }
 
+.citacao {
+	border: 1px solid #066;
+	border-left: 10px solid #066;
+	margin: 0;
+	padding: 0.5em 10px;
+	width: 100%;
+	border-radius: 30px;
+}
+
+.citacao p {
+	display: block;
+	margin: 1em;
+	font: 100 italic 1em 'Droid Serif', Georgia, "Times New Roman", Serif;
+	line-height: 1.6em;
+}
+
+@media (min-width: 768px){
+
+	.citacao {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.citacao p {
+		line-height: 1.6em;
+	}
+
+}
+
+.citacao p:before {
+	color: #066;
+	content: open-quote;
+	font-size: 5em;
+	margin-right: .1em;
+	vertical-align: -.4em;
+	line-height: 0;
+}
+.citacao p:after {
+	content: close-quote;
+	color: #066;
+	font-size: 5em;
+	line-height: 0;
+	margin-left: .1em;
+	vertical-align: -.6em;
+}
+
+.citacao .autor{
+	color: #066;
+	text-align: right;
+	display: block;
+	padding: 0 1em 1em 0;
+	color: 066;
+	font: 900 1em 'Lato', Helvetica, Arial, sans-serif;
+	font-style: normal;
+}
 
 
 /* Aula 5 - Questões importantes: erros comuns e as fontes nos meios digitais */
