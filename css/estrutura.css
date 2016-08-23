@@ -68,6 +68,14 @@ html {
 }
 
 @media (min-width: 768px){
+	
+	.inverso, .exemplo, .destaque {
+		margin: 30px 0;
+	}
+
+}
+
+@media (min-width: 768px){
 
 	.container {
 	    width: 750px;

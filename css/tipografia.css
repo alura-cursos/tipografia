@@ -342,13 +342,16 @@ a:hover{
 #questoes-importantes{ 
 }
 
-.bibliografia {
+.bibliografia, .creditos {
 	list-style-type: none;
-	font-style: italic;
 	padding: 0;
 }
 .bibliografia li {
 	list-style-type: none;
 	font-style: italic;
+	margin-bottom: .5em;
+}
+.creditos li {
+	list-style-type: none;
 	margin-bottom: .5em;
 }
