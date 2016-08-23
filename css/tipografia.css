@@ -204,6 +204,14 @@ p, li{
 	font-size: 1em;
 }
 
+@media (min-width: 768px){
+
+	.destaque p{
+		font-size: 1.4em;
+	}
+
+}
+
 
 
 /* Aula 4 - Estilos aplicáveis com CSS3 */
@@ -286,6 +294,7 @@ a:hover{
 	padding: 0.5em 10px;
 	width: 100%;
 	border-radius: 30px;
+	quotes: "\201C""\201D""\2018""\2019";
 }
 
 .citacao p {
@@ -341,6 +350,22 @@ a:hover{
 
 #questoes-importantes{ 
 }
+
+.justificado-errado{
+	text-align: justify;
+	color: #E00;
+}
+
+.justificado-certo{
+	text-align: justify;
+	color: #0CC;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+/* Rodapé */
 
 .bibliografia, .creditos {
 	list-style-type: none;
