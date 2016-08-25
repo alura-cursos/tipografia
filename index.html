@@ -416,7 +416,8 @@ a:hover{
 				</div>
 				<div class="box-inteiro">
 					<h3>Como produzir uma capitular?</h3>
-					<p>Letra capitular é um estilo tipográfico que podemos utilizar para destacar parágrafos de maior importância. Esse recurso é utilizado em livros, revistas e também pode ser produzido com CSS. Para destacar uma capitular, podemos apenas tornar a primeira letra maior que as outras, como podemos atribuir características específicas a ela, como fundo, contorno e outros estilos. Nesta página, diversos parágrafos receberam a classe <b>capitular</b>. Vamos inserir os estilos no arquivo <b>tipografia.css</b> e ver o que acontece com esses parágrafos:</p>
+					<p class="capitular">Letra capitular é um estilo tipográfico que podemos utilizar para destacar parágrafos de maior importância. Trata-se de um recurso de estilização herdadado do design impresso tradicional, muito utilizado em livros, revistas e também pode ser produzido com CSS – interessante para estilizar matérias, artigos e posts. Por exemplo, o jogo <a href="https://worldofwarcraft.com/pt-br/" target="_blank">World of Warcraft</a> utiliza o "drop caps" nas matérias de seu portal.</p>
+					<p>Para destacar uma capitular, podemos apenas tornar a primeira letra maior que as outras, assim como também podemos atribuir características específicas a ela: fundo, contorno, margem, padding e outros estilos. Nesta página, diversos parágrafos receberam a classe <b>capitular</b>. Vamos inserir os estilos no arquivo <b>tipografia.css</b> e ver o que acontece com esses parágrafos:</p>
 					<pre class="codigo">
 .capitular:first-letter{
 	background-color: #666;
@@ -538,27 +539,27 @@ a:hover{
 							</tr>
 							<tr>
 								<td>color</td>
-								<td>Define a cor do texto.</td>
+								<td>Define a cor do texto. Devemos considerar a cor ou imagem do fundo a fim de produzir contraste para estilização e legibilidade.</td>
 								<td>"Cor" | initial | inherit</td>
 							</tr>
 							<tr>
 								<td>direction</td>
-								<td>Especifica a direção do texto: esquerda para direita ou direita para esquerda.</td>
+								<td>Especifica a direção do texto: esquerda para direita ou direita para esquerda. Mais utilizada para outros idiomas.</td>
 								<td>ltr | rtl | initial | inherit</td>
 							</tr>
 							<tr>
 								<td>letter-spacing</td>
-								<td>Determina o espaçamento entre os caracteres.</td>
+								<td>Determina o espaçamento entre os caracteres (aceita valores negativos).</td>
 								<td>normal | "Valor numérico" | initial | inherit</td>
 							</tr>
 							<tr>
 								<td>line-height</td>
-								<td>Estabelece a altura da linha de texto.</td>
+								<td>Estabelece a altura da linha de texto. Pouco espaço pode tornar o texto muito denso e cansativo, muito espaço pode fazer parecer que as linhas de texto estão soltas.</td>
 								<td>normal | "valor numérico" | Initial | inherit</td>
 							</tr>
 							<tr>
 								<td>text-align</td>
-								<td>Alinhamento do texto.</td>
+								<td>Alinhamento do texto. *Cuidado com o alinhamento justificado (Aula 5) </td>
 								<td>left | right | center | justify | initial | inherit</td>
 							</tr>
 							<tr>
@@ -645,7 +646,12 @@ a:hover{
 							</tr>
 						</tbody>
 					</table>
-					<p class="capitular">É importante lembrar que as propriedades de texto, de fonte e as demais propriedades CSS trabalham juntas para dispor os elementos pelo layout. Esta referência mostra apenas as propriedades que elementos de texto podem receber.</p>
+					<p class="capitular">É importante lembrar que as propriedades de texto, de fonte e as demais propriedades CSS trabalham juntas para dispor os elementos pelo layout. Esta referência mostra apenas as propriedades compatíveis com a maioria dos navegadores que elementos de texto podem receber.</p>
+					<p>Algumas propriedades, como o <b>letter-spacing</b>, ou o <b>word-spacing</b> devem ser utilizadas com finalidades específicas. Nesta página, por exemplo, utilizamos texto em caixa alta nos itens de menu. Para aumentar a legibilidade, podemos aumentar o espaçamento entre os caracteres e evitar que a leitura seja dificultada por letras próximas. Vamos adicionar o seguinte:</p>
+					<pre class="codigo">
+.menu-itens li, .btn-menu {
+	letter-spacing: .1em;
+}</pre>
 				</div>
 			</div>
 		</section>
@@ -655,8 +661,37 @@ a:hover{
 					<h1 class="titulo-de-capitulo">Questões importantes</h1>
 				</div>
 				<div class="box-inteiro">
+					<h2>Exemplos práticos</h2>
+					<p>A seguir, vamos criar composições e estilos para duas situações comuns no dia a dia de um designer:</p>
+				</div>
+				<div class="box-meio">
+					<h3>Produtos da listagem de um e-commerce</h3>
+					<p>Vamos utilizar o seguinte CSS para estilizar as classes que compõem a listagem de produto:</p>
+				</div>
+				<div class="box-meio exemplo">
+					<h4 id="exemplo-lista-de-produtos">Resultado:</h4>
+					<ul class="aula-5-lista-de-produtos">
+						<li class="aula-5-produto">
+							<a href="#exemplo-lista-de-produtos" alt="Produto exemplo">
+								<div class="aula-5-desconto">
+									-10%
+								</div>
+								<img src="img/aula-4/exemplo-produto-1.png" alt="Produto exemplo" class="aula-5-imagem-produto">
+								<div class="aula-5-infos-produto">
+									<div class="aula-5-nome-do-produto">Panela Inox linha Luxo 3L - Panelox</div>
+									<del class="aula-5-preco-velho">R$ 200,00</del>
+									<strong class="aula-5-preco-real">R$ 180,00</strong>
+									<strong class="aula-5-parcelas">ou 5x de R$ 36,00</strong>
+									<strong class="aula-5-frete-gratis">Frete Grátis</strong>
+								</div>
+							</a>
+						</li>
+						</li>
+					</ul>
+				</div>
+				<div class="box-inteiro">
 					<h2>Erros comuns</h2>
-					<p class="capitular">Existe uma série de detalhes que devemos nos atentar quando produzimos blocos de texto. Muitas vezes, alguns erros aparecem e não percebemos, pois são formados pelo próprio conteúdo, ou por um alinhamento que não serve para determinada situação. Seguem abaixo alguns problemas de texto que podem surgir:</p>
+					<p class="capitular">Existe uma série de detalhes que devemos nos atentar quando produzimos blocos de texto para uma página da web. Muitas vezes, alguns erros aparecem e não percebemos, pois são formados pelo próprio conteúdo, ou por um alinhamento que não serve para determinada situação. Seguem abaixo alguns problemas de texto que podem surgir:</p>
 				</div>
 				<div class="box-inteiro">
 					<h3>Caminhos de rato</h3>
@@ -677,12 +712,6 @@ a:hover{
 }</pre>
 					<p class="justificado-certo">Este pará&shy;grafo rece&shy;beu a hife&shy;ni&shy;zação condi&shy;cional em di&shy;ver&shy;sas pa&shy;la&shy;vras e, por esse mo&shy;tivo, o texto justi&shy;ficado se com&shy;por&shy;ta de ma&shy;nei&shy;ra ade&shy;quada. Os "cami&shy;nhos de rato" não são produ&shy;zidos, pois as pa&shy;la&shy;vras podem se se&shy;pa&shy;rar para melhor se ajus&shy;tarem ao bloco. Infe&shy;liz&shy;mente, para que isso acon&shy;teça, é neces&shy;sário declarar o hífen condi&shy;cional no html e defi&shy;nir a proprie&shy;dade css <b>hyphens</b> como auto&shy;mática.</p>
 					<p>Se tivéssemos que declarar todos os hífens, seria um trabalhão, não? Por isso que a maioria dos sites não utiliza texto justificado.</p>
-				</div>
-				<div class="box-inteiro">
-					<h3>Órfãs, viúvas e forcas</h3>
-					<p>Linha <b>órfã</b> é a primeira linha de um parágrafo que fica sozinha na página anterior, enquanto linha <b>viúva</b> é a última linha de um parágrafo que fica sozinha na página seguinte. Já uma <b>forca</b> é um pedaço de palavra hifenizada que fica sozinho na linha final de um parágrafo.</p>
-					<p>Esses erros são assuntos mais presentes no design editorial impresso. Na web, raramente vemos esses problemas, porém eles podem acontecer quando utilizamos a propriedade <b>column</b> em nosso layout e dividimos os textos em colunas, ou quando há algum tipo de paginação.</p>
-					<p>Vamos resolver esses problemas do seguinte texto:</p>
 				</div>
 				<div class="box-inteiro">
 					<h3>Efeito pérola</h3>
