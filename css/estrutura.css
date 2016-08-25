@@ -632,7 +632,7 @@ html {
 }
 
 .aula-5-produto {
-	padding: 5px 0;
+	padding: 0 0 10px;
 	position: relative;
 	display: block;
 }
@@ -654,7 +654,7 @@ html {
 .aula-5-infos-produto{
 	display: inline-block;
 	width: 63%;
-	padding: 5px 0 5px 5px;
+	padding: 0 0 5px 5px;
 }
 
 .aula-5-nome-do-produto {
