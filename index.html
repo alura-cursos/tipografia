@@ -666,28 +666,180 @@ a:hover{
 				</div>
 				<div class="box-meio">
 					<h3>Produtos da listagem de um e-commerce</h3>
-					<p>Vamos utilizar o seguinte CSS para estilizar as classes que compõem a listagem de produto:</p>
+					<p>Para estilizarmos os elementos de texto da listagem de produtos, utilizaremos o CSS abaixo. Caso queira ententer as propriedades que estilizam a estrutura e os outros elementos da listagem, consulte o arquivo <b>estrutura.css</b>.</p>
+					<pre class="codigo">
+.aula-5-lista-de-produtos li:hover{
+	text-decoration: none;
+}
+
+.aula-5-produto a {
+	text-decoration: none;
+
+}
+
+.aula-5-desconto {
+	color: #FFF;
+	font-size: .6em;
+	font-weight: bold;
+	line-height: 29px;
+	text-align: center;
+}
+
+.aula-5-infos-produto{
+	vertical-align: top;
+}
+
+.aula-5-nome-do-produto {
+	font-size: .8em;
+	line-height: 1.2em;
+}
+
+.aula-5-preco-velho {
+	color: #666;
+	font-size: .6em;
+}
+
+.aula-5-preco-real {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.aula-5-parcelas {
+	font-style: italic;
+	font-weight: bold;
+	color: #000;
+	font-size: .7em;
+}
+
+.aula-5-frete-gratis {
+	font-size: .4em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #FFF;
+}
+
+@media (min-width: 768px){
+
+	.aula-5-desconto {
+		font-size: .8em;
+		line-height: 39px;
+	}
+
+	.aula-5-nome-do-produto {
+		font-size: 1em;
+		line-height: 1.2em;
+	}
+
+	.aula-5-preco-velho {
+		font-size: .8em;
+	}
+
+	.aula-5-preco-real {
+		font-size: 1.2em;
+	}
+
+	.aula-5-parcelas {
+		font-size: .9em;
+	}
+
+	.aula-5-frete-gratis {
+		font-size: .7em;
+	}
+}</pre>
 				</div>
-				<div class="box-meio exemplo">
-					<h4 id="exemplo-lista-de-produtos">Resultado:</h4>
-					<ul class="aula-5-lista-de-produtos">
-						<li class="aula-5-produto">
-							<a href="#exemplo-lista-de-produtos" alt="Produto exemplo">
-								<div class="aula-5-desconto">
-									-10%
-								</div>
-								<img src="img/aula-4/exemplo-produto-1.png" alt="Produto exemplo" class="aula-5-imagem-produto">
-								<div class="aula-5-infos-produto">
-									<div class="aula-5-nome-do-produto">Panela Inox linha Luxo 3L - Panelox</div>
-									<del class="aula-5-preco-velho">R$ 200,00</del>
-									<strong class="aula-5-preco-real">R$ 180,00</strong>
-									<strong class="aula-5-parcelas">ou 5x de R$ 36,00</strong>
-									<strong class="aula-5-frete-gratis">Frete Grátis</strong>
-								</div>
-							</a>
-						</li>
-						</li>
-					</ul>
+				<div class="box-meio">
+					<p class="capitular">Por se tratar de uma listagem que receberá inúmeras informações, trabalharemos apenas com a fonte Lato, sem serifa, a fim de tornar a listagem mais leve. Utilizaremos variações de tamanho, peso, inclinação, cores, capitalização e espaçamento entre caracteres.</p>
+					<p>O elemento de maior destaque de um item da lista, claramente é a foto. O resto é informação de texto e precisa receber a devida hierarquia para cada informação. O nome é o elemento que mais pode variar de tamanho de caracteres, o preço é o que o usuário logo quer saber, as etiquetas de desconto e frete são vantagens de alguns produtos. Com essa classificação de cada item, conseguimos estabelecer a hierarquia e aplicar estilos compatíveis.</p>
+					<div class="resultado">
+						<h4 id="exemplo-lista-de-produtos">Resultado:</h4>
+						<ul class="aula-5-lista-de-produtos">
+							<li class="aula-5-produto">
+								<a href="#exemplo-lista-de-produtos" alt="Produto exemplo">
+									<div class="aula-5-desconto">
+										-10%
+									</div>
+									<img src="img/aula-5/exemplo-produto-1.png" alt="Produto exemplo" class="aula-5-imagem-produto">
+									<div class="aula-5-infos-produto">
+										<div class="aula-5-nome-do-produto">Panela Inox Panelox - linha Luxo 3L</div>
+										<del class="aula-5-preco-velho">R$ 200,00</del>
+										<strong class="aula-5-preco-real">R$ 180,00</strong>
+										<strong class="aula-5-parcelas">ou 5x de R$ 36,00</strong>
+										<strong class="aula-5-frete-gratis">Frete Grátis</strong>
+									</div>
+								</a>
+							</li>
+							<li class="aula-5-produto">
+								<a href="#exemplo-lista-de-produtos" alt="Produto exemplo">
+									<div class="aula-5-desconto">
+										-20%
+									</div>
+									<img src="img/aula-5/exemplo-produto-2.png" alt="Produto exemplo" class="aula-5-imagem-produto">
+									<div class="aula-5-infos-produto">
+										<div class="aula-5-nome-do-produto">Tábua de corte WoodKitchen 40x27x2cm</div>
+										<del class="aula-5-preco-velho">R$ 30,00</del>
+										<strong class="aula-5-preco-real">R$ 24,00</strong>
+										<strong class="aula-5-parcelas"></strong>
+									</div>
+								</a>
+							</li>
+							<li class="aula-5-produto">
+								<a href="#exemplo-lista-de-produtos" alt="Produto exemplo">
+									<img src="img/aula-5/exemplo-produto-3.png" alt="Produto exemplo" class="aula-5-imagem-produto">
+									<div class="aula-5-infos-produto">
+										<div class="aula-5-nome-do-produto">Máquina de lavar Eletronic Life - Linha Clean House 15kg Tampa Frontal</div>
+										<del class="aula-5-preco-velho"></del>
+										<strong class="aula-5-preco-real">R$ 1750,00</strong>
+										<strong class="aula-5-parcelas">ou 5x de R$ 350,00</strong>
+										<strong class="aula-5-frete-gratis">Frete Grátis</strong>
+									</div>
+								</a>
+							</li>
+							<li class="aula-5-produto">
+								<a href="#exemplo-lista-de-produtos" alt="Produto exemplo">
+									<div class="aula-5-desconto">
+										-10%
+									</div>
+									<img src="img/aula-5/exemplo-produto-1.png" alt="Produto exemplo" class="aula-5-imagem-produto">
+									<div class="aula-5-infos-produto">
+										<div class="aula-5-nome-do-produto">Panela Inox linha Luxo 3L - Panelox</div>
+										<del class="aula-5-preco-velho">R$ 200,00</del>
+										<strong class="aula-5-preco-real">R$ 180,00</strong>
+										<strong class="aula-5-parcelas">ou 5x de R$ 36,00</strong>
+										<strong class="aula-5-frete-gratis">Frete Grátis</strong>
+									</div>
+								</a>
+							</li>
+							<li class="aula-5-produto">
+								<a href="#exemplo-lista-de-produtos" alt="Produto exemplo">
+									<img src="img/aula-5/exemplo-produto-3.png" alt="Produto exemplo" class="aula-5-imagem-produto">
+									<div class="aula-5-infos-produto">
+										<div class="aula-5-nome-do-produto">Máquina de lavar Eletronic Life - Linha Clean House 15kg Tampa Frontal</div>
+										<del class="aula-5-preco-velho"></del>
+										<strong class="aula-5-preco-real">R$ 1750,00</strong>
+										<strong class="aula-5-parcelas">ou 5x de R$ 350,00</strong>
+										<strong class="aula-5-frete-gratis">Frete Grátis</strong>
+									</div>
+								</a>
+							</li>
+							<li class="aula-5-produto">
+								<a href="#exemplo-lista-de-produtos" alt="Produto exemplo">
+									<div class="aula-5-desconto">
+										-10%
+									</div>
+									<img src="img/aula-5/exemplo-produto-1.png" alt="Produto exemplo" class="aula-5-imagem-produto">
+									<div class="aula-5-infos-produto">
+										<div class="aula-5-nome-do-produto">Panela Inox linha Luxo 3L - Panelox</div>
+										<del class="aula-5-preco-velho">R$ 200,00</del>
+										<strong class="aula-5-preco-real">R$ 180,00</strong>
+										<strong class="aula-5-parcelas">ou 5x de R$ 36,00</strong>
+										<strong class="aula-5-frete-gratis">Frete Grátis</strong>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<p>Inspecione esta página com o navegador e veja como a listagem é exibida em formatos de tela menores.</p>
 				</div>
 				<div class="box-inteiro">
 					<h2>Erros comuns</h2>

@@ -356,18 +356,8 @@ a:hover{
 #questoes-importantes{ 
 }
 
-.aula-5-lista-de-produtos {
-	list-style-type: none;
-	padding: 0;
-}
-
 .aula-5-lista-de-produtos li:hover{
 	text-decoration: none;
-}
-
-.aula-5-produto {
-	padding: 15px;
-	position: relative;
 }
 
 .aula-5-produto a {
@@ -379,118 +369,72 @@ a:hover{
 	color: #FFF;
 	font-size: .6em;
 	font-weight: bold;
-	background-color: #0CC;
-	width: 30px;
-	height: 30px;
 	line-height: 29px;
 	text-align: center;
-	border-radius: 50%;
-	position: absolute;
-}
-
-.aula-5-imagem-produto{
-	width: 39%;
-	display: inline-block;
-	margin: 0;
 }
 
 .aula-5-infos-produto{
-	display: inline-block;
-	width: 59%;
-	margin: 0;
+	vertical-align: top;
 }
 
 .aula-5-nome-do-produto {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
 	font-size: .8em;
 	line-height: 1.2em;
-	height: 2.4em;      /* Dobro */
-	-webkit-line-clamp: 2; /* número de linhas para mostrar */
-	-webkit-box-orient: vertical;
 }
 
 .aula-5-preco-velho {
-	display: block;
 	color: #666;
-	font-size: .8em;
-	margin-top: .5em;
+	font-size: .6em;
 }
 
 .aula-5-preco-real {
-	display: block;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: bold;
 }
 
 .aula-5-parcelas {
 	font-style: italic;
 	font-weight: bold;
-	display: block;
 	color: #000;
-	font-size: 1em;
+	font-size: .7em;
 }
 
 .aula-5-frete-gratis {
-	display: inline-block;
-	font-size: .8em;
+	font-size: .4em;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: .1em;
+	letter-spacing: .2em;
 	color: #FFF;
-	background-color: #0CC;
-	padding: 5px 10px;
-	border-radius: 15px;
-	margin-top: .5em;
 }
 
 @media (min-width: 768px){
 
-	.aula-5-lista-de-produtos {
-		padding: 10px;
-	}
-
-	.aula-5-lista-de-produtos li:hover{
-		-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
-		-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
-		box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
-	}
-
-	.aula-5-produto{
-		width: 49.5%;
-		display: inline-block;
-	}
-
 	.aula-5-desconto {
 		font-size: .8em;
-		width: 40px;
-		height: 40px;
 		line-height: 39px;
-	}
-
-	.aula-5-imagem-produto{
-		width: 100%;
-	}
-	
-	.aula-5-infos-produto{
-		margin-top: .5em;
-		width: 100%;
-		padding-left: 0;
 	}
 
 	.aula-5-nome-do-produto {
 		font-size: 1em;
 		line-height: 1.2em;
-		height: 2.4em;      /* Dobro */
+	}
+
+	.aula-5-preco-velho {
+		font-size: .8em;
+	}
+
+	.aula-5-preco-real {
+		font-size: 1.2em;
+	}
+
+	.aula-5-parcelas {
+		font-size: .9em;
+	}
+
+	.aula-5-frete-gratis {
+		font-size: .7em;
 	}
 }
-
-
-
-
-
-
 
 .justificado-errado{
 	text-align: justify;

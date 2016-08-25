@@ -67,6 +67,14 @@ html {
 	border-radius: 15px;
 }
 
+.resultado{
+	border: 2px solid #066;
+	border-radius: 15px;
+	background-color: #FFF;
+	padding: 15px;
+	margin: 0 -15px;
+}
+
 @media (min-width: 768px){
 	
 	.inverso, .exemplo, .destaque {
@@ -616,6 +624,127 @@ html {
 	overflow: auto;
     padding: 100px 0;
     background: #F1F1F1;
+}
+
+.aula-5-lista-de-produtos {
+	list-style-type: none;
+	padding: 0;
+}
+
+.aula-5-produto {
+	padding: 0;
+	position: relative;
+	display: block;
+}
+
+.aula-5-desconto {
+	background-color: #0CC;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.aula-5-imagem-produto{
+	width: 35%;
+	display: inline-block;
+	margin: 0;
+}
+
+.aula-5-infos-produto{
+	display: inline-block;
+	width: 63%;
+	margin: 0;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+
+.aula-5-nome-do-produto {
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	height: 2.4em;      /* Dobro do line-height */
+	-webkit-line-clamp: 2; /* número de linhas para mostrar */
+	-webkit-box-orient: vertical;
+}
+
+.aula-5-preco-velho {
+	display: block;
+	margin-top: .6em;
+	height: 1.2em;
+}
+
+.aula-5-preco-real {
+	display: block;
+	height: 1.2em;
+}
+
+.aula-5-parcelas {
+	display: block;
+	height: 3em;
+}
+
+.aula-5-frete-gratis {
+	background-color: #0CC;
+	padding: 3px 7px;
+	border-radius: 15px;
+	position: absolute;
+	margin-top: -2.5em;
+}
+
+@media (min-width: 768px){
+
+	.aula-5-lista-de-produtos {
+		padding: 10px;
+	}
+
+	.aula-5-lista-de-produtos li:hover{
+		-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+		box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+	}
+
+	.aula-5-produto{
+		width: 49.5%;
+		display: inline-block;
+		padding: 15px;
+	}
+
+	.aula-5-desconto {
+		width: 40px;
+		height: 40px;
+	}
+
+	.aula-5-imagem-produto{
+		width: 100%;
+	}
+	
+	.aula-5-infos-produto{
+		margin-top: .5em;
+		width: 100%;
+		padding-left: 0;
+		padding-top: 0;
+	}
+
+	.aula-5-nome-do-produto {
+		height: 2.4em;      /* Dobro do line height */
+	}
+
+	.aula-5-preco-velho {
+		height: 1.4em;
+	}
+
+	.aula-5-preco-real {
+		height: 1.2em;
+	}
+
+	.aula-5-frete-gratis {
+		padding: 5px 10px;
+		border-radius: 15px;
+		position: absolute;
+		margin-top: -2em;
+	}
 }
 
 footer {
