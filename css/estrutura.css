@@ -364,12 +364,12 @@ html {
 	padding-top: 36%;
 	padding-top: 20vh;
 	background-image: url(../img/fundo-header.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
 }
 
 @media (min-width: 768px){
@@ -745,6 +745,28 @@ html {
 }
 
 footer {
-	height: 400px;
-    background: #FFF;
+	color: #FFF;
+	padding-bottom: 60px;
+	background-image: url(../img/fundo-header.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+.ico-carreira{
+	display: block;
+	height: 40px;
+	padding: .5em 0 0 0;
+}
+
+@media (min-width: 768px){
+	.ico-carreira{
+		display: inline-block;
+		float: left;
+		height: 50px;
+		padding: .5em .5em 
+	}
 }

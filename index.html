@@ -102,52 +102,10 @@
 						<p>Acesse o link e baixe a fonte em seu computador.</p>
 					<h3>Já baixou a fonte?</h3>
 					<p>Se você já está com o arquivo da fonte em seus downloads, siga para o próximo passo.</p>
-					<a href="#instalacao-computador" class="botao">Seguir</a>
+					<a href="#font-embed" class="botao">Seguir</a>
 				</div>
 				<div class="box-inteiro">
-					<h2 id="instalacao-computador">Como instalar fontes em seu computador</h2>
-				</div>
-				<div class="box-terco">
-					<img src="img/aula-2/ico-mac.png" class="icone-sistema">
-					<h3>OS <small>(Mac)</small></h3>
-					<h4>Modo 1</h4>
-					<ol class="passos">
-						<li>Clique duas vezes sobre a fonte que deseja instalar;</li>
-						<li>Uma janela se abrirá, clique em <em>instalar fonte</em>.</li>
-					</ol>
-				
-					<h4>Modo 2</h4>
-					<ol class="passos">
-						<li>Abra o aplicativo <em>Catálogo de Fontes (Fontbook);</em></li>
-						<li>Arraste as fontes que deseja instalar para lá.;</li>
-						<li>As fontes que você instalar, podem ser vistas na aba <em>Usuário (User)</em>.</li>
-					</ol>
-				</div>
-				<div class="box-terco">
-					<img src="img/aula-2/ico-windows.png" class="icone-sistema">
-					<h3>Windows <small>(Microsoft)</small></h3>
-					<h4>Modo 1</h4>
-					<ol class="passos">
-						<li>Clique com o botão direito sobre a fonte desejada;</li>
-						<li>Selecione a opção <em>instalar</em>.</li>
-					</ol>
-				
-					<h4>Modo 2</h4>
-					<ol class="passos">
-						<li>Acesse <em>c:\Windows\Fonts</em>;</li>
-						<li>Copie ou mova a fonte que deseja instalar para lá.</li>
-					</ol>
-				</div>
-				<div class="box-terco">
-					<img src="img/aula-2/ico-linux.png" class="icone-sistema">
-					<h3 id="instalacao-computador">Ubuntu <small>(Linux)</small></h3>
-					<ol class="passos">
-						<li>Acesse o diretório <em>/usr/share/fonts/</em>;</li>
-						<li>Copie ou mova o arquivo da fonte para lá;</li>
-					</ol>
-				</div>
-				<div class="box-inteiro">
-					<h2>Incorporando uma fonte em seu site</h2>
+					<h2 id="font-embed">Incorporando uma fonte em seu site</h2>
 					<p class="capitular">Para utiizar uma fonte em uma página da web, é necessário que ela esteja incorporada no site, pois caso o usuário não a tenha em seu computador, a página carregará com outra fonte. Para isso, podemos utilizar uma propriedade CSS, como também podemos incorporar a fonte por meio de um serviço <i>online</i>.</p>
 				</div>
 				<div class="box-inteiro">
@@ -266,7 +224,50 @@ p, li {
 					<p>Na etapa seguinte, a de composições, veremos como criar novas combinações de fontes. Para isso, vamos incorporar também as fontes <a href="https://fonts.google.com/specimen/Roboto+Slab" target="_blank">Roboto Slab 300, 400 e 700,</a> e <a href="https://fonts.google.com/specimen/Lobster" target="_blank">Droid Serif 400, 400 itálico, 700 e 700 itálico</a>, então substitua o código que incluimos no <em>header</em> por:</p>
 						<pre class="codigo">
 &lt;link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Lato:300,300i,400,400i,700,700i|Roboto+Slab:300,400,700" rel="stylesheet"&gt;</pre>
-					<p>É importante lembrar que, quanto maior o número de fontes incorporadas em uma página, maior será o tempo para carregar.</p>
+					<p>É importante lembrar que, quanto maior o número de fontes incorporadas em uma página, maior será o tempo para carregar. Além disso, as fontes carregadas diretamente do Google Fontes podem fazer com que sua página demore mais para carregar, pois dependem de outro servidor.</p>
+				</div>
+				<div class="box-inteiro">
+					<h2>Como instalar fontes em seu computador</h2>
+					<p>Para utilizar uma fonte em uma página da web, não precisamos que ela esteja instalada no computador – o próprio navegador renderiza as fontes incorporadas. Mas, caso precisemos utilizar determinada fonte em outro software, ela deve estar instalada no computador. Caso precise, basta seguir os passos abaixo de seu sistema operacional.</p>
+				</div>
+				<div class="box-terco">
+					<img src="img/aula-2/ico-mac.png" class="icone-sistema">
+					<h3>OS <small>(Mac)</small></h3>
+					<h4>Modo 1</h4>
+					<ol class="passos">
+						<li>Clique duas vezes sobre a fonte que deseja instalar;</li>
+						<li>Uma janela se abrirá, clique em <em>instalar fonte</em>.</li>
+					</ol>
+				
+					<h4>Modo 2</h4>
+					<ol class="passos">
+						<li>Abra o aplicativo <em>Catálogo de Fontes (Fontbook);</em></li>
+						<li>Arraste as fontes que deseja instalar para lá;</li>
+						<li>As fontes que você instalar, podem ser vistas na aba <em>Usuário (User)</em>.</li>
+					</ol>
+				</div>
+				<div class="box-terco">
+					<img src="img/aula-2/ico-windows.png" class="icone-sistema">
+					<h3>Windows <small>(Microsoft)</small></h3>
+					<h4>Modo 1</h4>
+					<ol class="passos">
+						<li>Clique com o botão direito sobre a fonte desejada;</li>
+						<li>Selecione a opção <em>instalar</em>.</li>
+					</ol>
+				
+					<h4>Modo 2</h4>
+					<ol class="passos">
+						<li>Acesse <em>c:\Windows\Fonts</em>;</li>
+						<li>Copie ou mova a fonte que deseja instalar para lá.</li>
+					</ol>
+				</div>
+				<div class="box-terco">
+					<img src="img/aula-2/ico-linux.png" class="icone-sistema">
+					<h3 id="instalacao-computador">Ubuntu <small>(Linux)</small></h3>
+					<ol class="passos">
+						<li>Acesse o diretório <em>/usr/share/fonts/</em>;</li>
+						<li>Copie ou mova o arquivo da fonte para lá;</li>
+					</ol>
 				</div>
 			</div>
 		</section>
@@ -874,7 +875,8 @@ a:hover{
 			<div class="container">
 				<div class="box-inteiro">
 					<h2 class="">Se interessou pelo desenvolvimento de páginas web?</h2>
-						<p>Conheça a <a href="https://www.alura.com.br/carreira-desenvolvedor-front-end" target="_blank">Carreira Desenvolvedor Front-End Alura</a>. Os cursos abordam desde as linguagens fundamentais HTML, CSS e Javascript, webdesign responsivo e até frameworks que podem facilitar a vida do profissional.</p>
+						<img class="ico-carreira" src="https://www.alura.com.br/assets/img/carreira/label-carreira.1472136844.svg" alt="Carreira">
+						<p>Conheça a <a href="https://www.alura.com.br/carreira-desenvolvedor-front-end" target="_blank">Carreira Desenvolvedor Front-End Alura</a>. Os cursos abordam desde as linguagens fundamentais HTML, CSS e Javascript, webdesign responsivo e frameworks que podem facilitar a vida do profissional.</p>
 				</div>
 				<div class="box-meio">
 					<h3>Bibliografia</h3>
@@ -889,7 +891,7 @@ a:hover{
 					<h3>Créditos</h3>
 
 					<ul class="creditos">
-						<li>Projeto: Bruno Harnik</li>
+						<li>Projeto: <a href="http://www.brunoharnik.com.br" target="_blank">Bruno Harnik</a></li>
 						<li>Front-end: Bruno Harnik, Renan Saggio</li>
 						<li>Revisão de texto: Patrícia Alcântara</li>
 						<li>Revisão de código: Renan Saggio, Artur Diniz Adam</li>
