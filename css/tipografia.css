@@ -1,7 +1,7 @@
 /* Pesos estruturais */
 
 body{
-	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-family: 'Lato', 'Trebuchet MS', 'Arial', sans-serif;
 	color: #666;
 }
 
@@ -93,7 +93,7 @@ p{
 }
 
 .intro-subtitulo{ 
-	font: 100 italic 1.2em 'Droid Serif', Georgia, "Times New Roman", Serif;
+	font: 100 italic 1.2em 'Droid Serif', 'Georgia', 'Times New Roman', Serif;
 	margin-bottom: 1em;
 	font-weight: normal;
 	
@@ -129,23 +129,23 @@ p{
 /* Aula 1 - Conhecendo os diferentes tipos de fonte */
 
 .aula-1-serifa{ 
-	font-family: "Times New Roman", Georgia, Serif;
+	font-family: 'Times New Roman', 'Georgia', Serif;
 }
 
 .aula-1-sem-serifa{ 
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 .aula-1-espacamento-fixo{ 
-	font-family: "Courier New", Courier, monospace;
+	font-family: 'Courier New', 'Courier', monospace;
 }
 
 .aula-1-cursiva{ 
-	font-family: "Brush Script MT", cursive;
+	font-family: 'Brush Script MT', cursive;
 }
 
 .aula-1-fantasia{ 
-	font-family: "Papyrus", cursive;
+	font-family: 'Papyrus', cursive;
 }
 
 
@@ -153,7 +153,7 @@ p{
 /* Aula 2 - Extensões, uso legal e instalação de fontes */
 
 @font-face{ 
-	font-family: 'Rounded_Elegance';
+	font-family: 'Rounded Elegance';
 		src: url('../fonts/Rounded_Elegance.eot'); /* Modo compatível com IE 9 */
 		src: url('../fonts/Rounded_Elegance.eot?#iefix') format('embedded-opentype'), /* IE6 e IE8 */
 			url('../fonts/Rounded_Elegance.woff2') format('woff2'), /* Browsers mais recentes */
@@ -163,7 +163,7 @@ p{
 }
 
 h1, h2, h3, h4, .menu-itens li{ 
-	font-family: 'Rounded_Elegance', "Century Gothic", CenturyGothic, AppleGothic, "Trebuchet MS", sans-serif;
+	font-family: 'Rounded Elegance', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'Trebuchet MS', sans-serif;
 	font-weight: normal;
 }
 
@@ -179,7 +179,7 @@ p, li{
 }
 
 .aula-3-titulo-serifa{
-	font-family: 'Droid Serif', Georgia, "Times New Roman", Serif;
+	font-family: 'Droid Serif', 'Georgia', 'Times New Roman', Serif;
 	font-weight: bold;
 }
 
@@ -294,13 +294,13 @@ a:hover{
 	padding: 0.5em 10px;
 	width: 100%;
 	border-radius: 30px;
-	quotes: "\201C""\201D""\2018""\2019";
+	quotes: '\201C''\201D''\2018''\2019';
 }
 
 .citacao p {
 	display: block;
 	margin: 1em;
-	font: 100 italic 1em 'Droid Serif', Georgia, "Times New Roman", Serif;
+	font: 100 italic 1em 'Droid Serif', 'Georgia', 'Times New Roman', Serif;
 	line-height: 1.6em;
 }
 
@@ -341,8 +341,7 @@ a:hover{
 	display: block;
 	padding: 0 1em 1em 0;
 	color: 066;
-	font: 900 1em 'Lato', Helvetica, Arial, sans-serif;
-	font-style: normal;
+	font: normal 900 1em 'Lato', 'Trebuchet MS', 'Arial', sans-serif;
 }
 
 .menu-itens li, .btn-menu {

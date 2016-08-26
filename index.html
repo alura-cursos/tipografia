@@ -156,20 +156,20 @@
 					<p>Acesse o arquivo <b>tipografia.css</b> e adicione o seguinte:</p>
 					<pre class="codigo">
 @font-face {
-	font-family: Rounded_Elegance;
+	font-family: 'Rounded Elegance';
 	src: url('../fonts/Rounded_Elegance.ttf');
 }</pre>
 					<p>Vamos estilizar todos os títulos e os itens do menu de navegação de nosso site com a fonte que incorporamos, então inserimos no CSS:</p>
 						<pre class="codigo">
-h1, h2, h3, h4, .menu-itens{ 
-	font-family: 'Rounded_Elegance', "Century Gothic", CenturyGothic, AppleGothic, "Trebuchet MS", sans-serif;
+h1, h2, h3, h4, .menu-itens li{ 
+	font-family: 'Rounded Elegance', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'Trebuchet MS', sans-serif;
 	font-weight: normal;
 }</pre>
 					<p>Definimos que o <em>font-weight</em> é <em>normal</em> para resetar o comportamento padrão dos títulos. Também definimos outras fontes que poderão substituir a que escolhemos, caso ela não seja encontrada ou renderizada pelo navegador do usuário. Uma boa referência para saber quais são as fontes mais comuns nos computadores é o site <a href="http://www.cssfontstack.com/" target="_blank">CSS Font Stack</a>.</p>
 					<p>Se você testou esta página em um navegador atual, deve ter visto a fonte incorporada corretamente em todos os títulos (só a introdução que possui classes personalizadas). Mas, como nem tudo na internet é simples, o ideal é incorporarmos outros formatos de fontes para que funcione como desejamos para a maior parte dos usuários. O css <em>@font-face</em> ficará assim:</p>
 					<pre class="codigo">
 @font-face {
-	font-family: 'Rounded_Elegance';
+	font-family: 'Rounded Elegance';
 		src: url('../fonts/Rounded_Elegance.eot'); /* Modo compatível com IE 9 */
 		src: url('../fonts/Rounded_Elegance.eot?#iefix') format('embedded-opentype'), /* IE6 e IE8 */
 			url('../fonts/Rounded_Elegance.woff2') format('woff2'), /* Browsers mais recentes */
@@ -249,8 +249,7 @@ h1, h2, h3, h4, .menu-itens{
 					<p>Então, vamos também definir o <em>font-family</em> do <em>body</em> no <b>tipografia.css</b>:</p>
 					<pre class="codigo">
 body{
-	font-family: 'Lato', Helvetica, Arial, sans-serif;
-	color: #666;
+	font-family: 'Lato', 'Trebuchet MS', 'Arial', sans-serif;
 }</pre>
 					<p>Todas as fontes que não tinham sido estilizadas em nosso arquivo mudaram (basicamente, os parágrafos, as listas e a tabela). Vamos deixar os parágrafos e listas ainda mais suaves e agradáveis para a leitura? Então, defina o seguinte no <b>tipografia.css</b>:</p>
 					<pre class="codigo">
@@ -374,7 +373,7 @@ p, li {
 					<p>Como vimos nos princípios para uma tipografia de boa legibilidade, muito contraste pode tornar a leitura cansativa. Vamos reduzir esse contraste atribuindo a cor #666666 para todo o texto da página, que deverá substituir a cor preta, que é padrão quando não definimos a cor do texto. Então definimos o <em>body</em> que ficará assim:</p>
 					<pre class="codigo">
 body{
-	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-family: 'Lato', 'Trebuchet MS', 'Arial', sans-serif;
 	color: #666;
 }</pre>
 					<p>A diminuição do contraste tornou nossa página menos densa e a leitura mais agradável.</p>
@@ -467,7 +466,7 @@ a:hover{
 						<p>A gente faz parte do crescimento da pessoa, não somos nós que fazemos a pessoa crescer. Estamos lá para poder permitir esse crescimento, então é uma vitória em que pudemos fazer parte.</p>
 						<cite class="autor">Guilherme Silveira</cite>
 					</blockquote>
-					<p>Vamos estilizar esse bloco com a seguinte definição no CSS:</p>
+					<p>Vamos estilizar este bloco com a seguinte definição no CSS:</p>
 					<pre class="codigo">
 .citacao {
 	border: 1px solid #066;
@@ -476,13 +475,13 @@ a:hover{
 	padding: 0.5em 10px;
 	width: 100%;
 	border-radius: 30px;
-	quotes: "\201C""\201D""\2018""\2019";
+	quotes: '\201C''\201D''\2018''\2019';
 }
 
 .citacao p {
 	display: block;
 	margin: 1em;
-	font: 100 italic 1em 'Droid Serif', Georgia, "Times New Roman", Serif;
+	font: 100 italic 1em 'Droid Serif', 'Georgia', 'Times New Roman', Serif;
 	line-height: 1.6em;
 }
 
@@ -523,8 +522,7 @@ a:hover{
 	display: block;
 	padding: 0 1em 1em 0;
 	color: 066;
-	font: 900 1em 'Lato', Helvetica, Arial, sans-serif;
-	font-style: normal;
+	font: normal 900 1em 'Lato', 'Trebuchet MS', 'Arial', sans-serif;
 }</pre>
 					<p>Por meio dos seletores <b>before</b> e <b>after</b>, adicionamos o conteúdo "aspas" de abertura, de fechamento e aplicamos o estilo para que se encaixe bem em qualquer tamanho de texto.</p>
 				</div>
