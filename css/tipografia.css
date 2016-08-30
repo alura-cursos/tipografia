@@ -451,6 +451,13 @@ a:hover{
 
 /* Rodapé */
 
+footer a {
+	color: #0CC;
+}
+footer a:hover {
+	color: #0EE;
+}
+
 .bibliografia, .creditos {
 	list-style-type: none;
 	padding: 0;

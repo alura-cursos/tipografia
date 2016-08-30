@@ -124,6 +124,12 @@ h1, h2, h3, h4, .menu-itens li{
 	font-weight: normal;
 }</pre>
 					<p>Definimos que o <em>font-weight</em> é <em>normal</em> para resetar o comportamento padrão dos títulos. Também definimos outras fontes que poderão substituir a que escolhemos, caso ela não seja encontrada ou renderizada pelo navegador do usuário. Uma boa referência para saber quais são as fontes mais comuns nos computadores é o site <a href="http://www.cssfontstack.com/" target="_blank">CSS Font Stack</a>.</p>
+				</div>
+				<div class="box-inteiro inverso">
+					<h4>Incorporando fontes com variações de peso e estilo</h4>
+					<p>Para adicionar variações da fonte, podemos incorporar os arquivos correspondentes aos demais estilos e dar um nome diferente para a variação da fonte na propriedade @font-face. Se quisermos que a fonte tenha o mesmo nome, mas aceite outras propriedades corretamente, devemos declarar as propriedades <b>font-weight</b> e <b>font-style</b> no @font-face referente àquela fonte.</p>
+				</div>
+				<div class="box-inteiro">
 					<p>Se você testou esta página em um navegador atual, deve ter visto a fonte incorporada corretamente em todos os títulos (só a introdução que possui classes personalizadas). Mas, como nem tudo na internet é simples, o ideal é incorporarmos outros formatos de fontes para que funcione como desejamos para a maior parte dos usuários. O css <em>@font-face</em> ficará assim:</p>
 					<pre class="codigo">
 @font-face {
