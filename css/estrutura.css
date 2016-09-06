@@ -389,6 +389,12 @@ html{
     background: #F1F1F1;
 }
 
+.img-100{
+	width: 100%;
+}
+
+/* Extensões */
+
 #extensoes{
 	overflow: auto;
     padding: 100px 0;

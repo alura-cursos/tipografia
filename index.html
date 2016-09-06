@@ -81,6 +81,15 @@
 					<h3 class="aula-1-fantasia">Fantasia</h3>
 					<p class="aula-1-fantasia">São as fontes que não se encaixam nas outras regras e podem ter diferentes aspectos. Quando utilizadas, normalmente estilizam títulos ou elementos decorativos.</p>
 				</div>
+				<div class="box-inteiro">
+					<img src="img/aula-1/tipografia-guias.png" alt="Tipografia" class="img-100">
+					<p><b>Altura X:</b> altura da letra minúscula da fonte.</p>
+					<p><b>Altura de Versal:</b> distância da linha de base ao topo da letra maiúscula.</p>
+					<p><b>Altura de Ascendente:</b> altura que algumas letras minúsculas atingem que pode ser igual a altura de versal.</p>
+					<p><b>Altura de Descendente:</b> comprimento que algumas letras atingem para a parte inferior da linha de base.</p>
+					<p><b>Linha de Base:</b> eixo que alinha todos os caracteres.</p>
+					<p><b>Saliênca:</b> curvas na base das letras que ultrapassam a linha de base, serve para balancear o texto. Se os tipos não fossem posicionados assim, pareceriam estar oscilando ao longo de um texto.</p>
+				</div>
 			</div>
 		</section>
 		<section id="extensoes">
@@ -97,7 +106,7 @@
 					<p>Esse tipo de fonte foi criado pela <em>Adobe</em> e é voltada principalmente para impressão, pois possui alta definição e grande compatibilidade com impressoras. Ela é encontrada em grupo de arquivos. No Windows e no Mac, as seguintes extensões compõem a fonte: <b>.afm</b>, <b>.pfb</b> e <b>.pfm</b>. Já no Linux, as extensões são: <b>.pfa</b> e <b>.afm</b></p>
 				</div>
 				<div class="box-meio texto-esquerda">
-					<h2 class="titulo-peso-2">As fontes possuem lincenças</h2>
+					<h2 class="titulo-peso-2">As fontes possuem licenças</h2>
 						<p class="capitular">Assim como o uso de imagens, o uso de fontes também possui licenças. Existem fontes pagas, de licença gratuita para uso não-comercial e de licença 100% livre. Como exemplo neste curso, vamos utilizar a fonte <a href="http://www.dafont.com/pt/rounded-elegance.font" target="_blank">Rounded Elegance</a>, que possui licença 100% livre e pode ser encontrada no site <a href="http://www.dafont.com/" target="_blank">dafont.com</a>, uma ótima referência para pesquisar e encontrar fontes.</p>
 						<p>Acesse o link e baixe a fonte em seu computador.</p>
 					<h3 class="titulo-peso-3">Já baixou a fonte?</h3>
@@ -105,7 +114,7 @@
 					<a href="#font-embed" class="botao">Seguir</a>
 				</div>
 				<div class="box-inteiro">
-					<h2 id="font-embed">Incorporando uma fonte em seu site</h2>
+					<h2 class="titulo-peso-2" id="font-embed">Incorporando uma fonte em seu site</h2>
 					<p class="capitular">Para utiizar uma fonte em uma página da web, é necessário que ela esteja incorporada no site, pois caso o usuário não a tenha em seu computador, a página carregará com outra fonte. Para isso, podemos utilizar uma propriedade CSS, como também podemos incorporar a fonte por meio de um serviço <i>online</i>.</p>
 				</div>
 				<div class="box-inteiro">
@@ -269,7 +278,7 @@ p, li{
 				</div>
 				<div class="box-terco">
 					<img src="img/aula-2/ico-linux.png" class="icone-sistema">
-					<h3 id="instalacao-computador">Ubuntu <small>(Linux)</small></h3>
+					<h3 class="titulo-peso-3">Ubuntu <small>(Linux)</small></h3>
 					<ol class="passos">
 						<li>Acesse o diretório <em>/usr/share/fonts/</em>;</li>
 						<li>Copie ou mova o arquivo da fonte para lá;</li>
@@ -316,7 +325,7 @@ p, li{
 					<p>O tamanho dos elementos de texto está diretamente ligado ao conteúdo, portanto, para que haja proporção, é interessante estipular um número mínimo e máximo de caracteres.</p>
 				</div>
 				<div class="box-inteiro">
-					<h3 class="titulo-peso-3">Com serifa ou sem serifa?</h3>
+					<h2 class="titulo-peso-2">Com serifa ou sem serifa?</h2>
 					<p class="capitular">As serifas têm a função de tornar os blocos ópticos mais contínuos. Por outro lado, as fontes sem serifa podem tornar os blocos de texto menos densos. A combinação de fontes deve remeter ao conteúdo e à identidade e, por esse motivo, cada layout é um caso específico. No momento da criação, algumas questões importantes podem ser levadas em consideração:</p>
 					<h4 class="titulo-peso-4">Quero gerar um aspecto mais moderno ou mais clássico?</h4>
 					<p>As fontes serifadas têm origem no alfabeto romano e são herança da imprensa de Gutenberg, por volta de 1439. As fontes sem serifa, também chamadas de grotescas, passaram a ser utilizadas funcionalmente pela escola Bauhaus, fato mais recente – 1919, a fim de criar composições com design mais moderno. É possível combinar ambas as fontes e até outros tipos, tudo depende da proposta do seu projeto.</p>
@@ -419,7 +428,7 @@ a:hover{
 					<p>Com isso já estilizamos boa parte do texto de nossa página. Vejamos a seguir como estilizar alguns elementos tipográficos.</p>
 				</div>
 				<div class="box-inteiro">
-					<h3 class="titulo-peso-3">Como produzir uma capitular?</h3>
+					<h3 class="titulo-peso-3">Como produzir uma capitular</h3>
 					<p class="capitular">Letra capitular é um estilo tipográfico que podemos utilizar para destacar parágrafos de maior importância. Trata-se de um recurso de estilização herdadado do design impresso tradicional, muito utilizado em livros, revistas e também pode ser produzido com CSS – interessante para estilizar matérias, artigos e posts. Por exemplo, o jogo <a href="https://worldofwarcraft.com/pt-br/" target="_blank">World of Warcraft</a> utiliza o "drop caps" nas matérias de seu portal.</p>
 					<p>Para destacar uma capitular, podemos apenas tornar a primeira letra maior que as outras, assim como também podemos atribuir características específicas a ela: fundo, contorno, margem, padding e outros estilos. Nesta página, diversos parágrafos receberam a classe <b>capitular</b>. Vamos inserir os estilos no arquivo <b>tipografia.css</b> e ver o que acontece com esses parágrafos:</p>
 					<pre class="codigo">
@@ -656,6 +665,11 @@ a:hover{
 	letter-spacing: .1em;
 }</pre>
 				</div>
+				<div class="box-inteiro inverso">
+					<h3 class="titulo-peso-3">Unidades de medida</h3>
+					<p>O CSS oferece uma grande quantidade de opcões para unidades de medida: em, px, pt, cm, in, entre outras. Algumas unidades têm a ver com o mundo físico e servem bem para impressão, como <b>cm</b>(centímetros) e <b>in</b>(inches - polegadas), mas não são funcionais para desenvolvimentos de páginas na web. Outras têm tamanho fixo, como <b>px</b> (pixels), funcionam bem para web, mas podem apresentar problemas para sites responsivos, caso o usuário tenha configurações específicas sobre o tamanho da fonte do navegador.</p>
+					<p>Neste projeto utilizamos bastante a unidade <b>em</b> (poderíamos ter usado porcentagem), que nada mais é que o próprio tamanho da fonte. 1 em significa 100%, ou seja, o total do tamanho da fonte naquela situação. Quando utilizamos <b>em</b> em outras propriedades, estamos utilizando como referência o tamanho da fonte daquele elemento.</p>
+				</div>
 			</div>
 		</section>
 		<section id="questoes-importantes">
@@ -872,6 +886,7 @@ a:hover{
 				</div>
 				<div class="box-meio">
 					<h3 class="titulo-peso-3">Efeito pérola</h3>
+					<p>Trata-se de um problema que pode ocorrer quando escolhemos fontes sem serifa de aspecto muito arredondado. A letra "o", quando é um círculo perfeito, pode acabar se detacando mais que outras letras dentro de um bloco de texto e esse problema é o tal do <b>efeito pérola</b>. Esse problema pode ser evitado com uma pesquisa de fontes adequada.</p>
 				</div>
 			</div>
 		</section>
