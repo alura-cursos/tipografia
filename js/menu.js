@@ -1,22 +1,28 @@
 "use strict";
 (function () {
-	
+
 
 	var btnMenu = document.querySelector("#btn-menu");
+	var btnSairMenu = document.querySelector("#btn-sair-menu");
 
-	var banner = document.querySelector("#introducao");
 	var menu = document.querySelector(".navbar");
+	var banner = document.querySelector("#introducao");
 	var footer = document.querySelector("footer");
 
-	btnMenu.addEventListener("click",function (e) {
+	btnMenu.addEventListener("click", function(e){
 		e.preventDefault();
-		this.classList.toggle("menu-active");
+		menu.classList.add("navbar--active")
+	})
+
+	btnSairMenu.addEventListener("click",function (e) {
+		e.preventDefault();
+		menu.classList.remove("navbar--active")
 	});
-	
+
 	var nodeList = Array.prototype.slice.call(document.querySelectorAll(".menu-itens li a"));
-	var menuItens = [];	
+	var menuItens = [];
 	var sections = Array.prototype.slice.call(document.querySelectorAll("section"));
-	
+
 	nodeList.forEach(function (node) {
 		menuItens[node.getAttribute("href").substr(1)] = node;
 	});

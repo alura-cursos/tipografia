@@ -142,31 +142,28 @@ html{
 		color: #fff;
 	}
 
-	#mainNav:not(:target) .menu-itens{
-		display: none;
-	}
-
-	#mainNav:target .menu-itens{
+	.navbar:target .menu-itens,
+	.navbar--active .menu-itens{
 		display:block;
 	}
 
-	#mainNav:not(:target) #btn-sair-menu{
+	#btn-sair-menu {
 		display: none;
 	}
 
-	#mainNav:target #btn-sair-menu{
+	#btn-menu{
 		display:block;
 	}
 
-	#mainNav:not(:target) #btn-menu{
+	.navbar:target #btn-sair-menu,
+	.navbar--active #btn-sair-menu{
 		display:block;
 	}
 
-	#mainNav:target #btn-menu{
+	.navbar:target #btn-menu,
+	.navbar--active #btn-menu{
 		display: none;
 	}
-
-
 
 	.menu-itens{
 		display:none;
