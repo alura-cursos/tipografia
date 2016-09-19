@@ -129,7 +129,15 @@
 }</pre>
 					<p>Vamos estilizar todos os títulos e os itens do menu de navegação de nosso site com a fonte que incorporamos, em seguida, iremos inserir no CSS:</p>
 						<pre class="codigo">
+<<<<<<< HEAD
+.titulo-de-capitulo,
+.titulo-peso-2,
+.titulo-peso-3,
+.titulo-peso-4,
+.menu-itens li{
+=======
 .titulo-de-capitulo, .titulo-peso-2, .titulo-peso-3, .titulo-peso-4, .menu-itens li{
+>>>>>>> origin/master
 	font-family: 'Rounded Elegance', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'Trebuchet MS', sans-serif;
 	font-weight: normal;
 }</pre>
@@ -227,7 +235,8 @@ body{
 }</pre>
 					<p>Todas as fontes que não tinham sido estilizadas em nosso arquivo mudaram (basicamente, os parágrafos, as listas e a tabela). Vamos deixar os parágrafos e listas ainda mais suaves e agradáveis para a leitura? Então, defina o seguinte no <b>tipografia.css</b>:</p>
 					<pre class="codigo">
-p, li{
+p,
+li{
 	font-weight: 300;
 }</pre>
 				</div>
@@ -405,14 +414,20 @@ a:hover{
 }</pre>
 					<p>Agora todos os links da página possuem a cor #CC0000 e, quando há sobreposição do cursor do mouse, os links passam a ter a cor #EE0000 e recebem um sublinhado. O estilo ficou interessante para quase toda a página, porém nos blocos <em>"inverso"</em> e <em>"destaque"</em> essa cor de link não funciona bem, pois esses blocos possuem uma relação de cor inversa: fundo escuro e texto claro. Então vamos definir cores turquesa para os links desses elementos:</p>
 					<pre class="codigo">
-.inverso a, .destaque a{
+.inverso a,
+.destaque a{
 	color: #0CC;
 }
 
-.inverso a:hover, .destaque a:hover{
+.inverso a:hover,
+.destaque a:hover{
 	color: #0EE;
 }</pre>
+<<<<<<< HEAD
+					<p>Nossa página também possui blocos de texto HTML e CSS (pre) com o conteúdo das atividades e são definidos pela classe <b>codigo</b>. Os textos pré-formatados, por padrão do navegador, já vêm com uma fonte de espaçamento fixo e isso já ajuda a lembrar que se trata de um código. Para tornar o nosso layout mais interessante e diferenciar os elementos, podemos destacar essas classes <b>codigo</b> com uma cor. Então definimos o seguinte:</p>
+=======
 					<p>Nossa página também possui blocos de texto HTML e CSS ( blockquote > pre > code ) com o conteúdo das atividades e são definidos pela classe <b>codigo</b>. Os textos pré-formatados, por padrão do navegador, já vêm com uma fonte de espaçamento fixo e isso já ajuda a lembrar que se trata de um código. Para tornar o nosso layout mais interessante e diferenciar os elementos, podemos destacar essas classes <b>codigo</b> com uma cor. Então definimos o seguinte:</p>
+>>>>>>> origin/master
 					<pre class="codigo">
 .codigo{
 	color: #0CC;
@@ -507,10 +522,6 @@ a:hover{
 		margin: 0 auto;
 	}
 
-	.citacao p{
-		line-height: 1.6em;
-	}
-
 }
 
 .citacao p:before{
@@ -536,7 +547,6 @@ a:hover{
 	text-align: right;
 	display: block;
 	padding: 0 1em 1em 0;
-	color: 066;
 	font: normal 900 1em 'Lato', 'Trebuchet MS', 'Arial', sans-serif;
 }</pre>
 					<p>Por meio dos seletores <b>before</b> e <b>after</b>, adicionamos o conteúdo "aspas" de abertura, de fechamento e aplicamos o estilo para que se encaixe bem em qualquer tamanho de texto.</p>
@@ -578,7 +588,7 @@ a:hover{
 							<tr>
 								<td>text-decoration</td>
 								<td>Especifica uma decoração adicionada ao texto.</td>
-								<td>none | underline | verline | line-through | initial | inherit</td>
+								<td>none | underline | overline | line-through | initial | inherit</td>
 							</tr>
 							<tr>
 								<td>text-indent</td>
@@ -662,7 +672,8 @@ a:hover{
 					<p class="capitular">É importante lembrar que as propriedades de texto, de fonte e as demais propriedades CSS trabalham juntas para dispor os elementos pelo layout. Esta referência mostra apenas as propriedades compatíveis com a maioria dos navegadores que os elementos de texto podem receber.</p>
 					<p>Algumas propriedades, como o <b>letter-spacing</b>, ou o <b>word-spacing</b> devem ser utilizadas com finalidades específicas. Nesta página, por exemplo, utilizamos texto em caixa alta nos itens de menu. Para aumentar a legibilidade, podemos aumentar o espaçamento entre os caracteres e evitar que a leitura seja dificultada por letras próximas. Vamos adicionar o seguinte:</p>
 					<pre class="codigo">
-.menu-itens li, .btn-menu{
+.menu-itens li,
+.btn-menu{
 	letter-spacing: .1em;
 }</pre>
 				</div>
