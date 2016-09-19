@@ -93,25 +93,21 @@ p{
 }
 
 .intro-titulo{ 
-	font: 900 2.5em;
+	font-size: 2.5em;
 	font-weight: normal;
 	text-transform: uppercase;
 	margin-bottom: .2em;
-	color: #FFF;
 }
 
 .intro-subtitulo{ 
-	font: 100 italic 1.2em 'Droid Serif', 'Georgia', 'Times New Roman', Serif;
+	font: 300 italic 1.2em 'Droid Serif', 'Georgia', 'Times New Roman', Serif;
 	margin-bottom: 1em;
-	font-weight: normal;
-	
 }
 
 @media (min-width: 768px){
 
 	.intro-titulo{
 		font-size: 3em;
-		text-transform: uppercase;
 	}
 
 	.intro-subtitulo{
@@ -124,7 +120,6 @@ p{
 
 	.intro-titulo{
 		font-size: 4em;
-		text-transform: uppercase;
 	}
 
 	.intro-subtitulo{
@@ -134,10 +129,11 @@ p{
 }
 
 
+
 /* Aula 1 - Conhecendo os diferentes tipos de fonte */
 
 .aula-1-serifa{ 
-	font-family: 'Times New Roman', 'Georgia', Serif;
+	font-family: 'Times New Roman', 'Georgia', serif;
 }
 
 .aula-1-sem-serifa{ 
@@ -153,14 +149,14 @@ p{
 }
 
 .aula-1-fantasia{ 
-	font-family: 'Papyrus', cursive;
+	font-family: 'Papyrus', fantasy;
 }
 
 
 
 /* Aula 2 - Extensões, uso legal e instalação de fontes */
 
-@font-face{ 
+@font-face{
 	font-family: 'Rounded Elegance';
 		src: url('../fonts/Rounded_Elegance.eot'); /* Modo compatível com IE 9 */
 		src: url('../fonts/Rounded_Elegance.eot?#iefix') format('embedded-opentype'), /* IE6 e IE8 */
@@ -170,12 +166,17 @@ p{
 			url('../fonts/Rounded_Elegance.svg#svgFontName') format('svg'); /* iOS anteriores */
 }
 
-.titulo-de-capitulo, .titulo-peso-2, .titulo-peso-3, .titulo-peso-4, .menu-itens li{ 
+.titulo-de-capitulo,
+.titulo-peso-2,
+.titulo-peso-3,
+.titulo-peso-4,
+.menu-itens li{
 	font-family: 'Rounded Elegance', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'Trebuchet MS', sans-serif;
 	font-weight: normal;
 }
 
-p, li{ 
+p,
+li{
 	font-weight: 300;
 }
 
@@ -183,29 +184,26 @@ p, li{
 
 /* Aula 3 - Composições: alinhamento e combinações de fontes */
 
-#composicoes{ 
-}
-
 .aula-3-titulo-serifa{
-	font-family: 'Droid Serif', 'Georgia', 'Times New Roman', Serif;
+	font-family: 'Droid Serif', 'Georgia', 'Times New Roman', serif;
 	font-weight: bold;
 	font-size: 1.8em;
 }
 
 .aula-3-titulo-sem-serifa{
-	font-family: 'Lato', cursive;
+	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	font-size: 1.8em;
 }
 
 .aula-3-paragrafo-slab{
-	font-family: 'Roboto Slab', Serif;
+	font-family: 'Roboto Slab', serif;
 	font-weight: 300;
 }
 
 .destaque{
 	text-align: center;
-	font-family: 'Roboto Slab', Serif;
+	font-family: 'Roboto Slab', serif;;
 }
 
 .destaque p{
@@ -226,9 +224,6 @@ p, li{
 
 /* Aula 4 - Estilos aplicáveis com CSS3 */
 
-#estilos{ 
-}
-
 a{
 	color: #C00;
 	text-decoration: none;
@@ -239,11 +234,13 @@ a:hover{
 	text-decoration: underline;
 }
 
-.inverso a, .destaque a{
+.inverso a,
+.destaque a{
 	color: #0CC;
 }
 
-.inverso a:hover, .destaque a:hover{
+.inverso a:hover,
+.destaque a:hover{
 	color: #0EE;
 }
 
@@ -301,7 +298,7 @@ a:hover{
 	border: 1px solid #066;
 	border-left: 10px solid #066;
 	margin: 0;
-	padding: 0.5em 10px;
+	padding: 0.5em;
 	width: 100%;
 	border-radius: 30px;
 	quotes: '\201C''\201D''\2018''\2019';
@@ -321,15 +318,11 @@ a:hover{
 		margin: 0 auto;
 	}
 
-	.citacao p{
-		line-height: 1.6em;
-	}
-
 }
 
 .citacao p:before{
-	color: #066;
 	content: open-quote;
+	color: #066;
 	font-size: 5em;
 	margin-right: .1em;
 	vertical-align: -.4em;
@@ -350,20 +343,17 @@ a:hover{
 	text-align: right;
 	display: block;
 	padding: 0 1em 1em 0;
-	color: 066;
 	font: normal 900 1em 'Lato', 'Trebuchet MS', 'Arial', sans-serif;
 }
 
-.menu-itens li, .btn-menu{
+.menu-itens li,
+.btn-menu{
 	letter-spacing: .1em;
 }
 
 
 
 /* Aula 5 - Questões importantes: erros comuns e as fontes nos meios digitais */
-
-#questoes-importantes{ 
-}
 
 .aula-5-lista-de-produtos li:hover{
 	text-decoration: none;
