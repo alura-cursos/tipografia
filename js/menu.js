@@ -24,50 +24,81 @@
 		}
 	});
 
-	var nodeList = Array.prototype.slice.call(document.querySelectorAll(".menu-itens li a"));
-	var menuItens = [];
-	var sections = Array.prototype.slice.call(document.querySelectorAll("section"));
-
-	nodeList.forEach(function (node) {
-		menuItens[node.getAttribute("href").substr(1)] = node;
+	var links = Array.prototype.slice.call(document.querySelectorAll(".menu-itens li a"));
+	links.forEach(function(link){
+		link.addEventListener("click",function () {
+			desmarcaTodos(menuItens);
+			this.classList.toggle("active");
+		});
 	});
 
-	for(var prop in menuItens) {
-		var node = menuItens[prop];
+	var menuItens =	links.reduce(function (menuItens, link) {
+		menuItens[link.getAttribute("href").substr(1)] = link;
+		return menuItens;
+	}, {});
 
-		node.addEventListener("click",function () {
-
-			desmarcaTodos();
-
-			this.classList.toggle("active");
-
-		});
-	}
-
-	window.onscroll = function () {
-
-		sections.forEach(function (el) {
-
-			var idAtual = el.getAttribute('id');
-			var tamanhoAtual = -el.offsetHeight;
-			var relativePos = pegaPosicaoDo(el) - (introducao.offsetHeight + menu.offsetHeight - footer.offsetHeight);
-
-			if(relativePos <= 0 && relativePos > tamanhoAtual) {
-				menuItens[idAtual].classList.add("active");
-			}else {
-				menuItens[idAtual].classList.remove("active");
+	var sections = Array.prototype.map.call(document.querySelectorAll("section"), function(section, index){
+		return {
+			element: section
+			,top: function(){
+				return section.getBoundingClientRect().top + window.scrollY - (menu.getBoundingClientRect().height)
 			}
+			,bottom: function(){
+				return section.getBoundingClientRect().top + window.scrollY + section.offsetHeight - (menu.getBoundingClientRect().height)
+			}
+		}
+	});
 
-		});
-	}
+	window.onscroll = _debounce(function markCurrentSection(){
+		var $currentSection = sections.reduce(function($currentSection, section){
+			if($currentSection){
+				return $currentSection
+			}
+			if(scrollY >= section.top() && scrollY <= section.bottom()){
+				return section.element
+			}
+		}, null)
 
+		desmarcaTodos(menuItens)
+		if($currentSection !== null){
+			menuItens[$currentSection.getAttribute('id')].classList.add("active");
+		}
+	}, 10)
 
-	function pegaPosicaoDo(elemento) {
-		return elemento.getBoundingClientRect().top;
-	}
 	function desmarcaTodos(itens) {
 		for(var prop in itens) {
 			itens[prop].classList.remove("active");
 		}
 	}
+
+	function _throttle(fn, timeinmilis){
+        var intervaloSyncEdicao;
+        return function(){
+            clearInterval(intervaloSyncEdicao);
+            intervaloSyncEdicao = setTimeout(function(){
+                fn()
+            }, timeinmilis);
+        }
+    }
+
+	function _debounce(fn, rate){
+		var counter = -1;
+		var resetDebounce = function(){
+			counter = 0;
+			fn()
+		}
+		var shouldTrigger = function(){
+			return (counter % rate) == 0
+		}
+		var triggerIfLastTime = _throttle(function(){
+			resetDebounce()
+		},50)
+        return function(){
+			counter++
+			triggerIfLastTime()
+			if(shouldTrigger()){
+				resetDebounce()
+			}
+        }
+    }
 })();
