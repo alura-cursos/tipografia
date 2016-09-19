@@ -49,7 +49,7 @@
 		}
 	});
 
-	window.onscroll = _debounce(function markCurrentSection(){
+	window.onscroll = _throttle(function markCurrentSection(){
 		var $currentSection = sections.reduce(function($currentSection, section){
 			if($currentSection){
 				return $currentSection
@@ -60,10 +60,10 @@
 		}, null)
 
 		desmarcaTodos(menuItens)
-		if($currentSection !== null){
+		if($currentSection){
 			menuItens[$currentSection.getAttribute('id')].classList.add("active");
 		}
-	}, 10)
+	}, 300)
 
 	function desmarcaTodos(itens) {
 		for(var prop in itens) {
@@ -71,34 +71,38 @@
 		}
 	}
 
-	function _throttle(fn, timeinmilis){
-        var intervaloSyncEdicao;
-        return function(){
-            clearInterval(intervaloSyncEdicao);
-            intervaloSyncEdicao = setTimeout(function(){
-                fn()
-            }, timeinmilis);
-        }
-    }
+	function _debounce(fn, timeinmilis){
+		var intervaloSyncEdicao;
+		return function(){
+			clearInterval(intervaloSyncEdicao);
+			intervaloSyncEdicao = setTimeout(function(){
+				fn.apply(this, arguments);
+			}, timeinmilis);
+		}
+	}
 
-	function _debounce(fn, rate){
-		var counter = -1;
-		var resetDebounce = function(){
-			counter = 0;
-			fn()
+	function _throttle(fn, timeWindow){
+		var that;
+		var args;
+		var lastTime = new Date().getTime() - timeWindow;
+		var newTime;
+		var triggger = function(){
+			lastTime = newTime;
+			fn.apply(that, args);
 		}
-		var shouldTrigger = function(){
-			return (counter % rate) == 0
+		var shouldTrigger = function(time){
+			return (lastTime + timeWindow) < time;
 		}
-		var triggerIfLastTime = _throttle(function(){
-			resetDebounce()
-		},50)
-        return function(){
-			counter++
-			triggerIfLastTime()
-			if(shouldTrigger()){
-				resetDebounce()
+		var triggerIfLastTime = _debounce(triggger,timeWindow);
+		return function(){
+			that = this;
+			args = arguments;
+			newTime = new Date().getTime();
+			triggerIfLastTime();
+			if(shouldTrigger(newTime)){
+				lastTime = newTime;
+				fn.apply(this, arguments);
 			}
-        }
-    }
+		}
+	}
 })();
