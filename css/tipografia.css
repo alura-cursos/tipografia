@@ -133,23 +133,23 @@ p{
 /* Aula 1 - Conhecendo os diferentes tipos de fonte */
 
 .aula-1-serifa{ 
-	font-family: ;
+	font-family: 'Times New Roman', 'Georgia', serif;
 }
 
 .aula-1-sem-serifa{ 
-	font-family: ;
+	font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 .aula-1-espacamento-fixo{ 
-	font-family: ;
+	font-family: 'Courier New', 'Courier', monospace;
 }
 
 .aula-1-cursiva{ 
-	font-family: ;
+	font-family: 'Brush Script MT', cursive;
 }
 
 .aula-1-fantasia{ 
-	font-family: ;
+	font-family: 'Papyrus', fantasy;
 }
 
 
