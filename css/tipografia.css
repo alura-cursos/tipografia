@@ -2,7 +2,7 @@
 
 body{
 	font-family: 'Lato', 'Trebuchet MS', 'Arial', sans-serif;
-	color: ;
+	color: #666;
 }
 
 small{ 
@@ -225,130 +225,130 @@ li{
 /* Aula 4 - Estilos aplicáveis com CSS3 */
 
 a{
-	color: ;
-	text-decoration: ;
+	color: #C00;
+	text-decoration: none;
 }
 
 a:hover{
-	color: ;
-	text-decoration: ;
+	color: #E00;
+	text-decoration: underline;
 }
 
 .inverso a,
 .destaque a{
-	color: ;
+	color: #0CC;
 }
 
 .inverso a:hover,
 .destaque a:hover{
-	color: ;
+	color: #0EE;
 }
 
 .codigo{
-	color: ;
+	color: #0CC;
 }
 
 .titulo-de-capitulo{
-	padding: ;
-	margin-left: ;
-	color: ;
-	border-bottom: ;
-	border-left: ;
+	padding: 10px 0 10px 10px;
+	margin-left: -20px;
+	color: #000;
+	border-bottom: 2px dotted #0CC;
+	border-left: 10px solid #0CC;
 }
 
 .capitular:first-letter{
-	background-color: ;
-	float: ;
-	color: ;
-	font-size: ;
-	line-height: ;
-	padding: ;
-	border-radius: ;
-	margin-right: ;
+	background-color: #666;
+	float: left;
+	color: #FFF;
+	font-size: 2em;
+	line-height: 1.25em;
+	padding: 0 .2em;
+	border-radius: 5px;
+	margin-right: .1em;
 }
 
 @media (min-width: 768px){
 
 	.capitular:first-letter{
-		font-size: ;
+		font-size: 2.1em;
 	}
 
 }
 
 .capitular-inverso:first-letter{
-	background-color: ;
-	float: ;
-	color: ;
-	font-size: ;
-	line-height: ;
-	padding: ;
-	border-radius: ;
-	margin-right: ;
+	background-color: #FFF;
+	float: left;
+	color: #666;
+	font-size: 2em;
+	line-height: 1.25em;
+	padding: 0 .2em;
+	border-radius: 5px;
+	margin-right: .1em;
 }
 
 @media (min-width: 768px){
 
 	.capitular-inverso:first-letter{
-		font-size: ;
+		font-size: 2.1em;
 	}
 
 }
 
 .citacao{
-	border: ;
-	border-left: ;
-	margin: ;
-	padding: ;
-	width: ;
-	border-radius: ;
-	quotes: ;
+	border: 1px solid #066;
+	border-left: 10px solid #066;
+	margin: 0;
+	padding: 0.5em;
+	width: 100%;
+	border-radius: 30px;
+	quotes: '\201C''\201D''\2018''\2019';
 }
 
 .citacao p{
-	display: ;
-	margin: ;
-	font: ;
-	line-height: ;
+	display: block;
+	margin: 1em;
+	font: 100 italic 1em 'Droid Serif', 'Georgia', 'Times New Roman', Serif;
+	line-height: 1.6em;
 }
 
 @media (min-width: 768px){
 
 	.citacao{
-		width: ;
-		margin: ;
+		width: 60%;
+		margin: 0 auto;
 	}
 
 }
 
 .citacao p:before{
-	content: ;
-	color: ;
-	font-size: ;
-	margin-right: ;
-	vertical-align: ;
-	line-height: ;
+	content: open-quote;
+	color: #066;
+	font-size: 5em;
+	margin-right: .1em;
+	vertical-align: -.4em;
+	line-height: 0;
 }
 
 .citacao p:after{
-	content: ;
-	color: ;
-	font-size: ;
-	line-height: ;
-	margin-left: ;
-	vertical-align: ;
+	content: close-quote;
+	color: #066;
+	font-size: 5em;
+	line-height: 0;
+	margin-left: .1em;
+	vertical-align: -.6em;
 }
 
 .citacao .autor{
-	color: ;
-	text-align: ;
-	display: ;
-	padding: ;
-	font: ;
+	color: #066;
+	text-align: right;
+	display: block;
+	padding: 0 1em 1em 0;
+	font: normal 900 1em 'Lato', 'Trebuchet MS', 'Arial', sans-serif;
 }
 
 .menu-itens li,
 .btn-menu{
-	letter-spacing: ;
+	letter-spacing: .1em;
 }
 
 
