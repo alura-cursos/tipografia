@@ -1,7 +1,7 @@
 /* Pesos estruturais */
 
 body{
-	font-family: ;
+	font-family: 'Lato', 'Trebuchet MS', 'Arial', sans-serif;
 	color: ;
 }
 
@@ -157,7 +157,13 @@ p{
 /* Aula 2 - Extensões, uso legal e instalação de fontes */
 
 @font-face{
-
+	font-family: 'Rounded Elegance';
+		src: url('../fonts/Rounded_Elegance.eot'); /* Modo compatível com IE 9 */
+		src: url('../fonts/Rounded_Elegance.eot?#iefix') format('embedded-opentype'), /* IE6 e IE8 */
+			url('../fonts/Rounded_Elegance.woff2') format('woff2'), /* Browsers mais recentes */
+			url('../fonts/Rounded_Elegance.woff') format('woff'), /* Browsers recentes */
+			url('../fonts/Rounded_Elegance.ttf')  format('truetype'), /* Safari, Android e iOS */
+			url('../fonts/Rounded_Elegance.svg#svgFontName') format('svg'); /* iOS anteriores */
 }
 
 .titulo-de-capitulo,
@@ -165,13 +171,13 @@ p{
 .titulo-peso-3,
 .titulo-peso-4,
 .menu-itens li{
-	font-family: ;
-	font-weight: ;
+	font-family: 'Rounded Elegance', 'Century Gothic', 'CenturyGothic', 'AppleGothic', 'Trebuchet MS', sans-serif;
+	font-weight: normal;
 }
 
 p,
 li{
-	font-weight: ;
+	font-weight: 300;
 }
 
 
