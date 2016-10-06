@@ -356,96 +356,96 @@ a:hover{
 /* Aula 5 - Questões importantes: erros comuns e as fontes nos meios digitais */
 
 .aula-5-lista-de-produtos li:hover{
-	text-decoration: ;
+	text-decoration: none;
 }
 
 .aula-5-produto a{
-	text-decoration: ;
+	text-decoration: none;
 }
 
 .aula-5-desconto{
-	color: ;
-	font-size: ;
-	font-weight: ;
-	line-height: ;
-	text-align: ;
+	color: #FFF;
+	font-size: .6em;
+	font-weight: bold;
+	line-height: 29px;
+	text-align: center;
 }
 
 .aula-5-infos-produto{
-	vertical-align: ;
+	vertical-align: top;
 }
 
 .aula-5-nome-do-produto{
-	font-size: ;
-	line-height: ;
+	font-size: .8em;
+	line-height: 1.2em;
 }
 
 .aula-5-preco-velho{
-	color: ;
-	font-size: ;
+	color: #666;
+	font-size: .6em;
 }
 
 .aula-5-preco-real{
-	font-size: ;
-	font-weight: ;
+	font-size: 1em;
+	font-weight: bold;
 }
 
 .aula-5-parcelas{
-	font-style: ;
-	font-weight: ;
-	color: ;
-	font-size: ;
+	font-style: italic;
+	font-weight: bold;
+	color: #000;
+	font-size: .7em;
 }
 
 .aula-5-frete-gratis{
-	font-size: ;
-	font-weight: ;
-	text-transform: ;
-	letter-spacing: ;
-	color: ;
+	font-size: .4em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #FFF;
 }
 
 @media (min-width: 768px){
 
 	.aula-5-desconto{
-		font-size: ;
-		line-height: ;
+		font-size: .8em;
+		line-height: 39px;
 	}
 
 	.aula-5-nome-do-produto{
-		font-size: ;
-		line-height: ;
+		font-size: 1em;
+		line-height: 1.2em;
 	}
 
 	.aula-5-preco-velho{
-		font-size: ;
+		font-size: .8em;
 	}
 
 	.aula-5-preco-real{
-		font-size: ;
+		font-size: 1.2em;
 	}
 
 	.aula-5-parcelas{
-		font-size: ;
+		font-size: .9em;
 	}
 
 	.aula-5-frete-gratis{
-		font-size: ;
+		font-size: .7em;
 	}
 }
 
 .justificado-errado{
-	text-align: ;
-	color: ;
+	text-align: justify;
+	color: #E00;
 }
 
 .justificado-certo{
-	text-align: ;
-	color: ;
-	-webkit-hyphens: ;
-	-moz-hyphens: ;
-	-ms-hyphens: ;
-	hyphens: ;
+	text-align: justify;
+	color: #0CC;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }
 
 /* Rodapé */
